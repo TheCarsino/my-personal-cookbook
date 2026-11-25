@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import Checklist from '../../components/Checklist.astro';
+import PrintButton from '../../components/PrintButton.astro';
+import Icon from '../../components/Icon.astro';
+import Illus from '../../components/Illus.astro';
+import { plan, WEEK_TONE, toneStyle, base, type Week } from '../../lib/plan';
+
+export function getStaticPaths() {
+  return plan.weeks.map((w) => ({ params: { n: String(w.n) }, props: { week: w } }));
+}
+interface Props { week: Week }
+const { week } = Astro.props;
+const tone = WEEK_TONE[week.n];
+const r = (slug: string) => base(`/recetas/${slug}/`);
+
+const stores = week.shop.map((s) => ({
+  title: s.store,
+  tag: s.day,
+  note: s.note ? s.note.charAt(0).toUpperCase() + s.note.slice(1) : undefined,
+  icon: s.day === 'Miércoles' ? 'basket' : 'cart',
+  sections: s.sections,
+}));
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+---
+<Base title={`Semana ${week.n}`} active="semanas" description={`Semana ${week.n}: ${week.title}. Menú día por día, domingo de cocina y lista de compras.`}>
+  <div style={toneStyle(tone)}>
+    <section class="page-hero">
+      <div class="wrap">
+        <ul class="weekswitch" aria-label="Cambiar de semana">
+          {plan.weeks.map((w) => (
+            <li><a href={base(`/semana/${w.n}/`)} aria-current={w.n === week.n ? 'page' : undefined} aria-label={`Semana ${w.n}`}>{w.n}</a></li>
+          ))}
+        </ul>
+        <div class="row">
+          <div>
+            <h1>Semana {week.n}</h1>
+            <p class="sub">{week.title}</p>
+          </div>
+          <div class="hero-actions">
+            <span class="chip">Fritura de la semana: {week.fritura}</span>
+            <PrintButton />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="section" aria-labelledby="h-platos">
+        <div class="section-head"><h2 id="h-platos">Los tres almuerzos</h2></div>
+        <div class="plates">
+          {week.platos.map((p, i) => (
+            <article class="plate sticker">
+              <span class="big-letter" aria-hidden="true">{p.letter}</span>
+              <p class="when"><span class={`tag ${i % 2 ? 'alt' : ''}`}>{p.days}</span></p>
+              <h3><a href={r(p.slug)}>{p.name}</a></h3>
+              <div class="kv">
+                <p>{p.desc}</p>
+                <p><b>Sazón:</b> {p.spices}</p>
+                <p><b>Frío:</b> {p.cold}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="h-dias">
+        <div class="section-head"><h2 id="h-dias">Día por día</h2></div>
+        <div class="days">
+          <article class="day task sticker">
+            <div class="day-h"><h3>Sábado</h3><span class="tag">Compra</span></div>
+            <ul>{week.sat.map((x) => <li>{x}</li>)}</ul>
+          </article>
+          <article class="day task sticker">
+            <div class="day-h"><h3>Domingo</h3><span class="tag alt">Cocina</span></div>
+            <ul>
+              {week.sun.map((x) => <li>{x}</li>)}
+              <li><a href="#h-domingo">Ver el domingo de cocina</a></li>
+            </ul>
+          </article>
+          {week.menu.map((d) => (
+            <article class="day sticker">
+              <div class="day-h"><h3>{d.dayName}</h3><span class="plate-letter" aria-label={`Plato ${d.almuerzo.plato}`}>{d.almuerzo.plato}</span></div>
+              <dl>
+                <dt>Desayuno</dt><dd><a href={r(d.desayuno.slug)}>{d.desayuno.text}</a></dd>
+                <dt>Almuerzo</dt><dd><a href={r(d.almuerzo.slug)}>{d.almuerzo.text}</a></dd>
+                <dt>Dulce</dt><dd><a href={r(d.dulce.slug)}>{d.dulce.text}</a></dd>
+                <dt>Cena</dt><dd><a href={r(d.cena.slug)}>{d.cena.text}</a> <span class="muted small">({d.cena.slot})</span></dd>
+              </dl>
+              {d.night && (
+                <p class="night"><Icon name="moon" size={20} /><span><b>En la noche:</b> {cap(d.night)}</span></p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="h-domingo">
+        <div class="section-head">
+          <h2 id="h-domingo">Domingo de cocina</h2>
+          <Illus name="pot" size={56} />
+        </div>
+        <ol class="timeline">
+          {week.timeline.map((t, i) => (
+            <li class="tl-item sticker">
+              <div class="tl-time"><span class={`tag ${i % 2 ? 'alt' : ''}`}>{i + 1}</span>{t.time}</div>
+              <div class="lanes">
+                <div class="lane ollas"><h4><Icon name="pot" size={20} />Ollas</h4><p>{t.ollas}</p></div>
+                <div class="lane air"><h4><Icon name="clock" size={20} />Airfryer y horno</h4><p>{t.airfryer}</p></div>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <div class="section">
+        <Checklist
+          listKey={`semana-${week.n}`}
+          title="Lista de compras"
+          headingId="h-lista"
+          stores={stores}
+          intro={week.n === 1 ? 'El sábado de esta semana también toca la compra mensual de despensa.' : undefined}
+        />
+        {week.n === 1 && <p class="small" style="margin-top:12px"><a href={base('/despensa/#compra-mensual')}>Abrir la compra mensual</a></p>}
+      </div>
+    </div>
+  </div>
+</Base>

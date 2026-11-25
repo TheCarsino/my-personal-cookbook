@@ -1,0 +1,141 @@
+---
+// Ilustraciones planas originales de comida. Trazo grueso de tinta y
+// colores de la paleta del sitio. Todas usan viewBox 0 0 64 64.
+interface Props {
+  name: string;
+  size?: number;
+  class?: string;
+}
+const { name, size = 64, class: cls = '' } = Astro.props;
+
+const K = '#1E1A16'; // tinta
+const T = '#E8452C'; // tomate
+const M = '#F5B82E'; // mostaza
+const P = '#5E9F4B'; // palta
+const F = '#F29BB4'; // fresa
+const A = '#2F6FDB'; // azul
+const C = '#FFF6E8'; // crema
+const S = `stroke="${K}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"`;
+
+const art: Record<string, string> = {
+  egg: `
+    <path d="M13 35c-5-9 1-20 11-21 5-7 18-7 23 0 9 1 13 12 8 19 3 8-3 16-12 15-6 6-19 5-23-2-7-1-10-7-7-11z" fill="#fff" ${S}/>
+    <circle cx="33" cy="33" r="9" fill="${M}" ${S}/>
+    <path d="M29 30a4 4 0 0 1 4-3" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>`,
+  avocado: `
+    <path d="M32 5c-8 0-12 9-14 17-6 6-9 12-9 19 0 11 10 18 23 18s23-7 23-18c0-7-3-13-9-19C44 14 40 5 32 5z" fill="${P}" ${S}/>
+    <path d="M32 12c-5 0-8 7-9 13-5 5-7 10-7 15 0 8 7 13 16 13s16-5 16-13c0-5-2-10-7-15-1-6-4-13-9-13z" fill="#D8E9A8" ${S}/>
+    <circle cx="32" cy="40" r="8" fill="#9A5B2E" ${S}/>`,
+  bowl: `
+    <path d="M13 30c2-8 10-13 19-13s17 5 19 13z" fill="${C}" ${S}/>
+    <circle cx="24" cy="24" r="3.5" fill="${T}" ${S}/>
+    <path d="M36 20c4-4 9-3 10 0-3 3-7 3-10 0z" fill="${P}" ${S}/>
+    <path d="M7 30h50c0 14-11 25-25 25S7 44 7 30z" fill="${A}" ${S}/>
+    <path d="M15 38h34" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>`,
+  pot: `
+    <path d="M24 12c0-3 3-3 3-6M32 12c0-3 3-3 3-6M40 12c0-3 3-3 3-6" fill="none" ${S}/>
+    <path d="M12 22h40v4H12z" fill="${K}" ${S}/>
+    <path d="M14 26h36v18a10 10 0 0 1-10 10H24a10 10 0 0 1-10-10z" fill="${T}" ${S}/>
+    <path d="M14 31H7v-4h7M50 31h7v-4h-7" fill="${M}" ${S}/>
+    <path d="M28 18h8v4h-8z" fill="${M}" ${S}/>
+    <path d="M20 36h24" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>`,
+  taper: `
+    <rect x="7" y="16" width="50" height="9" rx="4" fill="${A}" ${S}/>
+    <path d="M10 25h44l-3 25a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="${C}" ${S}/>
+    <path d="M32 25v29" ${S}/>
+    <path d="M15 34c3-3 7-3 10 0s-1 9-5 9-8-6-5-9z" fill="${M}" ${S}/>
+    <circle cx="42" cy="33" r="4" fill="${P}" ${S}/>
+    <circle cx="44" cy="43" r="4" fill="${T}" ${S}/>`,
+  fish: `
+    <path d="M6 32c7-11 18-16 30-16 9 0 15 6 18 16-3 10-9 16-18 16-12 0-23-5-30-16z" fill="${A}" ${S}/>
+    <path d="M54 32l6-10v20z" fill="${A}" ${S}/>
+    <path d="M24 22c3 6 3 14 0 20" fill="none" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="15" cy="29" r="3" fill="${C}" ${S}/>
+    <path d="M32 36c4 2 8 2 12 0" fill="none" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>`,
+  steak: `
+    <path d="M10 30c0-12 12-20 26-18 12 2 20 9 18 20-1 8-7 9-10 16-4 7-16 9-24 5S10 41 10 30z" fill="${T}" ${S}/>
+    <path d="M17 31c0-8 8-13 18-12 8 1 13 6 12 13" fill="none" stroke="${C}" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="30" cy="34" r="5" fill="${C}" ${S}/>`,
+  chop: `
+    <path d="M8 34c0-13 13-22 28-20 11 2 18 10 15 20-2 7-8 8-11 14-4 6-14 8-21 5S8 44 8 34z" fill="${F}" ${S}/>
+    <path d="M16 34c0-8 8-13 18-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M46 40l9 9" stroke="${K}" stroke-width="9" stroke-linecap="round"/>
+    <path d="M46 40l9 9" stroke="${C}" stroke-width="4" stroke-linecap="round"/>`,
+  bread: `
+    <path d="M12 26c-6-2-6-14 4-16 6-5 26-5 32 0 10 2 10 14 4 16v24a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" fill="${M}" ${S}/>
+    <path d="M17 27c-3-2-2-8 3-9 4-3 20-3 24 0 5 1 6 7 3 9v20H17z" fill="${C}" ${S}/>`,
+  banana: `
+    <path d="M12 18c-2 18 10 34 32 34 6 0 10-2 12-5-12 1-26-6-32-22-1-4-1-8 0-10z" fill="${M}" ${S}/>
+    <path d="M12 18l-3-6 6-1 1 6" fill="#9A5B2E" ${S}/>
+    <path d="M20 26c4 10 12 18 24 21" fill="none" stroke="#C98A12" stroke-width="2.5" stroke-linecap="round"/>`,
+  jar: `
+    <rect x="18" y="6" width="28" height="8" rx="3" fill="${T}" ${S}/>
+    <path d="M16 14h32v36a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6z" fill="#fff" ${S}/>
+    <path d="M17 44h30v6a5 5 0 0 1-5 5H22a5 5 0 0 1-5-5z" fill="#E9D2A6"/>
+    <path d="M17 32h30v12H17z" fill="${C}"/>
+    <path d="M17 26c5 3 10-3 15 0s10-3 15 0v6H17z" fill="${F}"/>
+    <path d="M16 14h32v36a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6z" fill="none" ${S}/>
+    <circle cx="26" cy="22" r="2.5" fill="${K}"/><circle cx="36" cy="20" r="2.5" fill="${K}"/>`,
+  leaf: `
+    <path d="M10 54C8 30 24 10 54 10c2 28-16 46-44 44z" fill="${P}" ${S}/>
+    <path d="M14 50C24 38 34 28 46 18M24 40h10M30 33v-9" fill="none" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>`,
+  chili: `
+    <path d="M44 16c-6 0-8 6-10 12-4 12-12 20-24 24 14 4 30-2 36-16 2-6 4-14-2-20z" fill="${T}" ${S}/>
+    <path d="M44 16c0-5 3-8 8-9M40 17c2-3 6-3 8 0" fill="none" stroke="${P}" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 24c-2 8-6 14-12 18" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>`,
+  spicejar: `
+    <rect x="20" y="6" width="24" height="10" rx="3" fill="${K}" ${S}/>
+    <path d="M18 16h28v34a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z" fill="${T}" ${S}/>
+    <rect x="18" y="26" width="28" height="16" fill="${M}" ${S}/>
+    <circle cx="27" cy="34" r="2" fill="${K}"/><circle cx="33" cy="31" r="2" fill="${K}"/><circle cx="38" cy="36" r="2" fill="${K}"/>`,
+  drumstick: `
+    <path d="M40 8c10 0 17 8 15 18-2 9-10 13-18 14l-6 6c-4 4-10 0-8-4l-1-1c-4 2-8-4-4-8l6-6c-1-9 5-19 16-19z" fill="${M}" ${S}/>
+    <path d="M44 15c5 1 7 5 6 9" fill="none" stroke="${C}" stroke-width="3" stroke-linecap="round"/>
+    <path d="M22 42l-8 8" stroke="${K}" stroke-width="9" stroke-linecap="round"/>
+    <path d="M22 42l-8 8" stroke="${C}" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="11" cy="51" r="4" fill="${C}" ${S}/><circle cx="15" cy="55" r="4" fill="${C}" ${S}/>`,
+  shrimp: `
+    <path d="M44 12c10 4 14 16 8 26-5 9-16 14-26 12l-8 6 2-10c-4-3-4-9 0-11 8-4 18-5 21-12 2-4 0-8-4-9z" fill="${F}" ${S}/>
+    <path d="M36 22c3 2 4 6 3 9M28 30c3 2 4 6 2 10M44 22c3 3 3 7 1 10" fill="none" stroke="${K}" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="46" cy="16" r="2.5" fill="${K}"/>
+    <path d="M48 12c4-6 8-6 12-5M46 11c2-6 4-7 8-8" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round"/>`,
+  empanada: `
+    <path d="M6 42c0-16 12-28 26-28s26 12 26 28z" fill="${M}" ${S}/>
+    <path d="M6 42c2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 5 4 6 0 2 4 4 4 4 0" fill="none" ${S}/>
+    <path d="M20 26c3-3 7-4 10-4" fill="none" stroke="${C}" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="36" cy="32" r="1.8" fill="#C98A12"/><circle cx="42" cy="36" r="1.8" fill="#C98A12"/>`,
+  tortilla: `
+    <path d="M8 50L32 10l24 40z" fill="${M}" ${S}/>
+    <path d="M14 46l18-29 18 29" fill="none" stroke="${T}" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="26" cy="40" r="2" fill="#9A5B2E"/><circle cx="34" cy="32" r="2" fill="#9A5B2E"/><circle cx="38" cy="42" r="2" fill="#9A5B2E"/>`,
+  pasta: `
+    <path d="M14 30c0-6 8-10 18-10s18 4 18 10" fill="${M}" ${S}/>
+    <path d="M18 26c4 4 8-4 12 0s8-4 12 0" fill="none" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="28" cy="22" r="4" fill="${T}" ${S}/>
+    <path d="M46 4v22" ${S}/><path d="M42 4v8a4 4 0 0 0 8 0V4" fill="none" ${S}/>
+    <path d="M7 30h50c0 14-11 25-25 25S7 44 7 30z" fill="${T}" ${S}/>
+    <path d="M15 38h34" stroke="${C}" stroke-width="2.5" stroke-linecap="round"/>`,
+  beans: `
+    <path d="M10 26c0-8 10-12 16-8 3 2 3 5 6 6 6 2 7 10 1 14-7 5-23 2-23-12z" fill="${M}" ${S}/>
+    <path d="M30 44c0-8 10-12 16-8 3 2 3 5 6 6 6 2 7 10 1 14-7 5-23 2-23-12z" fill="${C}" ${S}/>
+    <path d="M36 12c4-6 14-4 16 2 2 5-2 6-1 10 1 6-6 9-11 5-5-3-7-12-4-17z" fill="${M}" ${S}/>`,
+  pumpkin: `
+    <path d="M32 14c-4 0-6 4-6 4-8-2-18 6-18 18 0 12 10 20 24 20s24-8 24-20c0-12-10-20-18-18 0 0-2-4-6-4z" fill="#F08A2B" ${S}/>
+    <path d="M26 18c-4 8-4 30 0 38M38 18c4 8 4 30 0 38" fill="none" ${S}/>
+    <path d="M32 14c0-4 2-7 6-8" fill="none" stroke="${P}" stroke-width="4" stroke-linecap="round"/>`,
+  cookie: `
+    <circle cx="32" cy="32" r="24" fill="${M}" ${S}/>
+    <circle cx="24" cy="24" r="3" fill="${K}"/><circle cx="38" cy="22" r="2.5" fill="${K}"/><circle cx="42" cy="36" r="3" fill="${K}"/>
+    <circle cx="28" cy="40" r="2.5" fill="${K}"/><circle cx="20" cy="34" r="2" fill="${K}"/>
+    <path d="M44 14a24 24 0 0 1 7 8" fill="none" stroke="${C}" stroke-width="3" stroke-linecap="round"/>`,
+  pan: `
+    <path d="M44 38l14 14" stroke="${K}" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="28" cy="30" r="22" fill="${K}" ${S}/>
+    <circle cx="28" cy="30" r="15" fill="${M}" ${S}/>
+    <path d="M20 26c4-4 10-5 15-2" fill="none" stroke="${C}" stroke-width="3" stroke-linecap="round"/>
+    <path d="M24 34c3 3 6 4 10 3" fill="none" stroke="${F}" stroke-width="4" stroke-linecap="round"/>`,
+};
+
+const inner = art[name] ?? art.bowl;
+---
+<svg class={`illus ${cls}`} viewBox="0 0 64 64" width={size} height={size} aria-hidden="true" focusable="false" set:html={inner} />

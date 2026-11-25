@@ -1,0 +1,119 @@
+---
+import '@fontsource-variable/bricolage-grotesque/standard.css';
+import '@fontsource-variable/figtree';
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { base } from '../lib/plan';
+
+interface Props {
+  title: string;
+  description?: string;
+  active?: 'inicio' | 'semanas' | 'recetas' | 'despensa';
+}
+const { title, description = 'Menús, recetas y listas de compras de cuatro semanas de táperes para 2 adultos.', active } = Astro.props;
+const fullTitle = title === 'Inicio' ? 'Recetario de la semana' : `${title} | Recetario de la semana`;
+const nav = [
+  { id: 'inicio', label: 'Inicio', href: base('/'), icon: 'home' },
+  { id: 'semanas', label: 'Semanas', href: base('/semana/1/'), icon: 'calendar' },
+  { id: 'recetas', label: 'Recetas', href: base('/recetas/'), icon: 'book' },
+  { id: 'despensa', label: 'Despensa', href: base('/despensa/'), icon: 'jar' },
+];
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#FFF6E8" />
+    <link rel="icon" type="image/svg+xml" href={base('/favicon.svg')} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Ir al contenido</a>
+    <header class="topbar">
+      <div class="topbar-in">
+        <a class="wordmark" href={base('/')}>
+          <span class="wm-dot" aria-hidden="true"></span>Recetario de la semana
+        </a>
+        <nav class="topnav" aria-label="Principal">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={active === n.id ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <slot />
+    </main>
+
+    <footer class="foot">
+      <p>Plan de 4 semanas, de sábado a viernes. Las marcas de las listas se guardan solo en este navegador.</p>
+    </footer>
+
+    <nav class="bottomnav" aria-label="Principal">
+      {nav.map((n) => (
+        <a href={n.href} aria-current={active === n.id ? 'page' : undefined}>
+          <Icon name={n.icon} size={22} />
+          <span>{n.label}</span>
+        </a>
+      ))}
+    </nav>
+
+    <script is:inline>
+      (function () {
+        var PREFIX = 'recetario-v3:';
+        function read(key) {
+          try {
+            var raw = window.localStorage.getItem(PREFIX + key);
+            var arr = raw ? JSON.parse(raw) : [];
+            return Array.isArray(arr) ? arr : [];
+          } catch (e) { return []; }
+        }
+        function write(key, arr) {
+          try { window.localStorage.setItem(PREFIX + key, JSON.stringify(arr)); } catch (e) {}
+        }
+        function clear(key) {
+          try { window.localStorage.removeItem(PREFIX + key); } catch (e) {}
+        }
+        var lists = document.querySelectorAll('[data-checklist]');
+        Array.prototype.forEach.call(lists, function (list) {
+          var key = list.getAttribute('data-checklist');
+          var boxes = list.querySelectorAll('input[type="checkbox"][data-id]');
+          var prog = list.querySelector('[data-progress]');
+          var bar = list.querySelector('[data-bar]');
+          var saved = read(key);
+          function update() {
+            var done = 0;
+            Array.prototype.forEach.call(boxes, function (b) { if (b.checked) done++; });
+            if (prog) prog.textContent = done + ' de ' + boxes.length;
+            if (bar) bar.style.setProperty('--p', boxes.length ? (done / boxes.length) : 0);
+          }
+          Array.prototype.forEach.call(boxes, function (b) {
+            b.checked = saved.indexOf(b.getAttribute('data-id')) !== -1;
+            b.addEventListener('change', function () {
+              var ids = [];
+              Array.prototype.forEach.call(boxes, function (x) { if (x.checked) ids.push(x.getAttribute('data-id')); });
+              write(key, ids);
+              update();
+            });
+          });
+          var reset = list.querySelector('[data-reset]');
+          if (reset) reset.addEventListener('click', function () {
+            var ok = true;
+            try { ok = window.confirm('¿Desmarcar todos los productos de esta lista?'); } catch (e) {}
+            if (!ok) return;
+            Array.prototype.forEach.call(boxes, function (b) { b.checked = false; });
+            clear(key);
+            update();
+          });
+          update();
+        });
+        Array.prototype.forEach.call(document.querySelectorAll('[data-print]'), function (btn) {
+          btn.addEventListener('click', function () { window.print(); });
+        });
+      })();
+    </script>
+  </body>
+</html>

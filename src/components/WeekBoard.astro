@@ -1,0 +1,93 @@
+---
+import type { Week } from '../lib/plan';
+import { base } from '../lib/plan';
+
+interface Props { week: Week }
+const { week } = Astro.props;
+const r = (slug: string) => base(`/recetas/${slug}/`);
+const EGG = '2 huevos + pan + palta + ';
+const days = week.menu;
+
+const breakfast = days.map((d) => {
+  const t = d.desayuno.text;
+  if (t.startsWith(EGG)) return { day: d.day, main: '2 huevos + pan + palta', fruit: t.slice(EGG.length), slug: d.desayuno.slug };
+  const [main, fruit] = t.split(' + ');
+  return { day: d.day, main, fruit: fruit ?? '', slug: d.desayuno.slug };
+});
+const eggDays = breakfast.filter((b) => b.main.startsWith('2 huevos'));
+const jarDays = breakfast.filter((b) => !b.main.startsWith('2 huevos'));
+const [A, B, C] = week.platos;
+const span = { A: 2, B: 2, C: 1 } as Record<string, number>;
+const dayList = (ds: string[]) => ds.join(', ');
+---
+<div class="board" role="table" aria-label={`Menú de la Semana ${week.n}, lunes a viernes`}>
+  <div role="row" style="display:contents">
+    <span role="columnheader"></span>
+    {days.map((d) => <span class="colhead" role="columnheader">{d.day}</span>)}
+  </div>
+  <div role="row" style="display:contents">
+    <span class="rowhead" role="rowheader">Desayuno</span>
+    {breakfast.map((b) => (
+      <span class="cell" role="cell"><a href={r(b.slug)} class="dish">{b.main}</a><span class="fruit">+ {b.fruit}</span></span>
+    ))}
+  </div>
+  <div role="row" style="display:contents">
+    <span class="rowhead" role="rowheader">Almuerzo</span>
+    {week.platos.map((p) => (
+      <span class="cell lunch" role="cell" style={`grid-column: span ${span[p.letter]}`}>
+        <span class="plate-letter" aria-label={`Plato ${p.letter}`}>{p.letter}</span>
+        <a href={r(p.slug)} class="dish">{p.name}</a>
+      </span>
+    ))}
+  </div>
+  <div role="row" style="display:contents">
+    <span class="rowhead" role="rowheader">Dulce</span>
+    <span class="cell" role="cell" style="grid-column: span 2"><a href={r(week.frasco.slug)} class="dish">{week.frasco.name}</a><span class="fruit">frasco de overnight oats</span></span>
+    <span class="cell" role="cell" style="grid-column: span 3"><a href={r(week.horneado.slug)} class="dish">{week.horneado.name}</a><span class="fruit">horneado del domingo</span></span>
+  </div>
+  <div role="row" style="display:contents">
+    <span class="rowhead" role="rowheader">Cena</span>
+    {days.map((d) => (
+      <span class="cell" role="cell"><a href={r(d.cena.slug)} class="dish">{d.cena.text}</a><span class="fruit">{d.cena.slot}</span></span>
+    ))}
+  </div>
+</div>
+
+<div class="board-m">
+  <div class="meal-m">
+    <h4>Desayuno</h4>
+    <ul>
+      <li>
+        <span class="daytag">{dayList(eggDays.map((b) => b.day))}</span>
+        <span class="dish"><a href={r(eggDays[0].slug)}>2 huevos + pan + palta</a>
+          <span class="fruit">Fruta: {eggDays.map((b) => `${b.day} ${b.fruit}`).join(', ')}</span></span>
+      </li>
+      {jarDays.map((b) => (
+        <li><span class="daytag">{b.day}</span><span class="dish"><a href={r(b.slug)}>{b.main}</a> + {b.fruit}</span></li>
+      ))}
+    </ul>
+  </div>
+  <div class="meal-m">
+    <h4>Almuerzo</h4>
+    <ul>
+      {week.platos.map((p) => (
+        <li><span class="daytag">{p.days}</span><span class="dish"><span class="plate-letter">{p.letter}</span><a href={r(p.slug)}>{p.name}</a></span></li>
+      ))}
+    </ul>
+  </div>
+  <div class="meal-m">
+    <h4>Dulce</h4>
+    <ul>
+      <li><span class="daytag">Lun-mar</span><span class="dish"><a href={r(week.frasco.slug)}>{week.frasco.name}</a></span></li>
+      <li><span class="daytag">Mié-vie</span><span class="dish"><a href={r(week.horneado.slug)}>{week.horneado.name}</a></span></li>
+    </ul>
+  </div>
+  <div class="meal-m">
+    <h4>Cena</h4>
+    <ul>
+      {week.cenas.map((c) => (
+        <li><span class="daytag">{c.days}</span><span class="dish"><a href={r(c.slug)}>{c.name}</a></span></li>
+      ))}
+    </ul>
+  </div>
+</div>

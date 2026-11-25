@@ -1,0 +1,3510 @@
+{
+ "site": {
+  "title": "Recetario de la semana",
+  "people": "2 adultos"
+ },
+ "categories": [
+  {
+   "id": "almuerzos",
+   "label": "Almuerzos"
+  },
+  {
+   "id": "cenas",
+   "label": "Cenas"
+  },
+  {
+   "id": "desayunos",
+   "label": "Desayunos"
+  },
+  {
+   "id": "dulces",
+   "label": "Dulces"
+  },
+  {
+   "id": "goodfoodpapi",
+   "label": "Más de goodfoodpapi"
+  }
+ ],
+ "weeks": [
+  {
+   "n": 1,
+   "title": "Una salsa de tomate, la napolitana de goodfoodpapi y el tiramisú",
+   "theme": "Tomate",
+   "fritura": "Milanesa de res en airfryer",
+   "platos": [
+    {
+     "letter": "A",
+     "days": "Lun-mar",
+     "name": "Pollo a la olla ahumado",
+     "fullName": "Pollo a la olla ahumado",
+     "desc": "Pollo deshilachado guisado en salsa madre + ¾ tz de arroz integral + vainitas y zanahoria",
+     "spices": "1 cda de ahumada + 1 cda de vinagre + 1 cda de sillao en la salsa",
+     "cold": "Refrigerado",
+     "slug": "pollo-a-la-olla-ahumado"
+    },
+    {
+     "letter": "B",
+     "days": "Mié-jue",
+     "name": "Milanesa napolitana de res",
+     "fullName": "Milanesa napolitana de res (adaptada de goodfoodpapi)",
+     "desc": "Bistec de tapa empanizado en airfryer, salsa madre y mozzarella + ½ tz de arroz + brócoli",
+     "spices": "Huevo batido con 1 cda de mostaza Dijon, sal y pimienta. Panko con ajo picado, perejil, 1 cda de mediterránea + ralladura de limón",
+     "cold": "Mié refrigerado; jue congelado",
+     "slug": "milanesa-napolitana-de-res"
+    },
+    {
+     "letter": "C",
+     "days": "Vie",
+     "name": "Lentejas al curry",
+     "fullName": "Lentejas al curry",
+     "desc": "Lentejas guisadas en salsa madre + ½ tz de arroz + 1 huevo duro aparte",
+     "spices": "2 cdtas de curry de la casa + 1 cdta de cúrcuma en el sofrito",
+     "cold": "Congelado; huevo refrigerado",
+     "slug": "lentejas-al-curry"
+    }
+   ],
+   "cenas": [
+    {
+     "slot": "C1",
+     "days": "Lun, mié y vie",
+     "name": "Quesadilla de frejol ahumado",
+     "slug": "quesadilla-de-frejol-ahumado"
+    },
+    {
+     "slot": "C2",
+     "days": "Mar y jue",
+     "name": "Fideos con atún y espinaca",
+     "slug": "fideos-con-atun-y-espinaca"
+    }
+   ],
+   "frasco": {
+    "name": "Tiramisú",
+    "slug": "overnight-oats-tiramisu"
+   },
+   "horneado": {
+    "name": "Queque de plátano y avena",
+    "slug": "queque-de-platano-y-avena"
+   },
+   "sat": [
+    "El mercado: pollo, bistec de tapa, huevos, verduras y fruta",
+    "Metro o Tottus: despensa mensual + quincenal 1 + lácteos",
+    "Guardar la carne abajo en el refrigerador; lavar y secar la lechuga"
+   ],
+   "sun": [
+    "Hacer las 4 mezclas de especias (10 min)",
+    "Cocina de 2 h 30"
+   ],
+   "rhythm": {
+    "sabado": "El mercado: pollo, bistec de tapa, huevos, verduras y fruta. Metro o Tottus: despensa mensual + quincenal 1 + lácteos",
+    "domingo": "Hacer las 4 mezclas de especias (10 min). Cocina de 2 h 30",
+    "miercoles": "Lechuga, palta, plátano, tomate"
+   },
+   "menu": [
+    {
+     "day": "Lun",
+     "dayName": "Lunes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + mandarina",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Pollo a la olla ahumado",
+      "plato": "A",
+      "slug": "pollo-a-la-olla-ahumado"
+     },
+     "dulce": {
+      "text": "Tiramisú",
+      "slug": "overnight-oats-tiramisu"
+     },
+     "cena": {
+      "text": "Quesadilla de frejol",
+      "slot": "C1",
+      "slug": "quesadilla-de-frejol-ahumado"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mar",
+     "dayName": "Martes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Pollo a la olla ahumado",
+      "plato": "A",
+      "slug": "pollo-a-la-olla-ahumado"
+     },
+     "dulce": {
+      "text": "Tiramisú",
+      "slug": "overnight-oats-tiramisu"
+     },
+     "cena": {
+      "text": "Fideos con atún",
+      "slot": "C2",
+      "slug": "fideos-con-atun-y-espinaca"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mié",
+     "dayName": "Miércoles",
+     "desayuno": {
+      "text": "Tiramisú + mango",
+      "slug": "overnight-oats-tiramisu"
+     },
+     "almuerzo": {
+      "text": "Milanesa napolitana de res",
+      "plato": "B",
+      "slug": "milanesa-napolitana-de-res"
+     },
+     "dulce": {
+      "text": "Queque",
+      "slug": "queque-de-platano-y-avena"
+     },
+     "cena": {
+      "text": "Quesadilla de frejol",
+      "slot": "C1",
+      "slug": "quesadilla-de-frejol-ahumado"
+     },
+     "night": "Comprar reposición. Pasar el Plato B del jueves al refrigerador"
+    },
+    {
+     "day": "Jue",
+     "dayName": "Jueves",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + papaya",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Milanesa napolitana de res",
+      "plato": "B",
+      "slug": "milanesa-napolitana-de-res"
+     },
+     "dulce": {
+      "text": "Queque",
+      "slug": "queque-de-platano-y-avena"
+     },
+     "cena": {
+      "text": "Fideos con atún",
+      "slot": "C2",
+      "slug": "fideos-con-atun-y-espinaca"
+     },
+     "night": "Pasar el Plato C y el frejol de la cena del viernes al refrigerador"
+    },
+    {
+     "day": "Vie",
+     "dayName": "Viernes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + mandarina",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Lentejas al curry",
+      "plato": "C",
+      "slug": "lentejas-al-curry"
+     },
+     "dulce": {
+      "text": "Queque",
+      "slug": "queque-de-platano-y-avena"
+     },
+     "cena": {
+      "text": "Quesadilla de frejol",
+      "slot": "C1",
+      "slug": "quesadilla-de-frejol-ahumado"
+     },
+     "night": "Revisar la despensa y armar la lista del sábado"
+    }
+   ],
+   "timeline": [
+    {
+     "time": "0:00-0:20",
+     "ollas": "Lentejas a presión; arroz; pollo (600 g) hervido con laurel. Marinar los filetes de res",
+     "airfryer": "Horno a 180 °C: queque (45-60 min)"
+    },
+    {
+     "time": "0:20-0:50",
+     "ollas": "Sofrito y salsa madre (20 min); en otra olla, salsa de los fideos con atún: ajo y orégano infusionados en 1 cda de aceite + 1 envase de tomate triturado, 15 min",
+     "airfryer": "Milanesas de res, tanda 1 (200 °C, 8-10 min)"
+    },
+    {
+     "time": "0:50-1:20",
+     "ollas": "Dividir la salsa; guisar el pollo del A; lentejas al curry; 4 huevos duros",
+     "airfryer": "Milanesas, tanda 2"
+    },
+    {
+     "time": "1:20-2:30",
+     "ollas": "Blanquear brócoli, vainitas y zanahoria; aplastar el frejol con ahumada, ajo y limón (porción del viernes al congelador)",
+     "airfryer": "Armar la napolitana; 6 frascos de tiramisú; porcionar, etiquetar y congelar"
+    }
+   ],
+   "shop": [
+    {
+     "store": "El mercado",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Proteínas",
+       "items": [
+        {
+         "id": "s1-0",
+         "text": "Pechuga de pollo, 600 g (Plato A)"
+        },
+        {
+         "id": "s1-1",
+         "text": "Bistec de tapa delgado para milanesa (o cadera), 600 g en 4 filetes (Plato B)"
+        },
+        {
+         "id": "s1-2",
+         "text": "Huevos, 1 plancha de 30"
+        }
+       ]
+      },
+      {
+       "name": "Verduras",
+       "items": [
+        {
+         "id": "s1-3",
+         "text": "Brócoli, 2"
+        },
+        {
+         "id": "s1-4",
+         "text": "Vainitas, 400 g"
+        },
+        {
+         "id": "s1-5",
+         "text": "Zanahoria, 4"
+        },
+        {
+         "id": "s1-6",
+         "text": "Cebolla, 4"
+        },
+        {
+         "id": "s1-7",
+         "text": "Ajo, 1 cabeza"
+        },
+        {
+         "id": "s1-8",
+         "text": "Pimiento rojo, 1"
+        },
+        {
+         "id": "s1-9",
+         "text": "Espinaca, 2 atados (quesadillas y fideos con atún)"
+        },
+        {
+         "id": "s1-10",
+         "text": "Perejil, 1 atado (empanizado y fideos)"
+        },
+        {
+         "id": "s1-11",
+         "text": "Lechuga, 1"
+        },
+        {
+         "id": "s1-12",
+         "text": "Tomate, 4"
+        },
+        {
+         "id": "s1-13",
+         "text": "Limón, 8"
+        }
+       ]
+      },
+      {
+       "name": "Frutas",
+       "items": [
+        {
+         "id": "s1-14",
+         "text": "Plátano, 9 (3 bien maduros para el queque)"
+        },
+        {
+         "id": "s1-15",
+         "text": "Mandarina, 8"
+        },
+        {
+         "id": "s1-16",
+         "text": "Mango, 2"
+        },
+        {
+         "id": "s1-17",
+         "text": "Papaya, 1 chica"
+        },
+        {
+         "id": "s1-18",
+         "text": "Palta, 2 (distintos puntos de madurez)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Sábado",
+     "note": "además de la despensa mensual",
+     "sections": [
+      {
+       "name": "Lácteos",
+       "items": [
+        {
+         "id": "s1-19",
+         "text": "Yogur griego natural sin azúcar, 500 g"
+        },
+        {
+         "id": "s1-20",
+         "text": "Leche, 1 L"
+        },
+        {
+         "id": "s1-21",
+         "text": "Mozzarella, 250 g (napolitana y quesadillas)"
+        }
+       ]
+      },
+      {
+       "name": "Pan (quincenal 1)",
+       "items": [
+        {
+         "id": "s1-22",
+         "text": "Pan integral de molde, 1 (la mitad al congelador)"
+        },
+        {
+         "id": "s1-23",
+         "text": "Tortillas integrales, 2 paquetes (quesadillas S1 y wraps de huevo S2; se congelan)"
+        },
+        {
+         "id": "s1-24",
+         "text": "Pan pita integral, 1 paquete (S3; se congela)"
+        },
+        {
+         "id": "s1-25",
+         "text": "Linguini o spaghetti integral, 500 g (fideos con atún)"
+        },
+        {
+         "id": "s1-26",
+         "text": "Mantequilla de maní 100%, 1 pote"
+        },
+        {
+         "id": "s1-27",
+         "text": "Chocolate 70%, 1 tableta"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Miércoles",
+     "note": "",
+     "sections": [
+      {
+       "name": "Reposición",
+       "items": [
+        {
+         "id": "s1-28",
+         "text": "Lechuga, 1"
+        },
+        {
+         "id": "s1-29",
+         "text": "Palta, 1"
+        },
+        {
+         "id": "s1-30",
+         "text": "Plátano, 3"
+        },
+        {
+         "id": "s1-31",
+         "text": "Tomate, 2"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shopCount": 32,
+   "keyIngredients": [
+    {
+     "group": "Proteínas",
+     "items": [
+      "Pechuga de pollo",
+      "Bistec de tapa",
+      "Huevos"
+     ]
+    },
+    {
+     "group": "Verduras y frutas",
+     "items": [
+      "Brócoli",
+      "Vainitas",
+      "Zanahoria",
+      "Cebolla",
+      "Pimiento rojo",
+      "Espinaca",
+      "Perejil",
+      "Lechuga",
+      "Tomate",
+      "Plátano",
+      "Mandarina",
+      "Mango",
+      "Papaya",
+      "Palta"
+     ]
+    },
+    {
+     "group": "Despensa y lácteos",
+     "items": [
+      "Yogur griego",
+      "Leche",
+      "Mozzarella",
+      "Pan integral de molde",
+      "Tortillas integrales",
+      "Pan pita integral",
+      "Linguini o spaghetti integral",
+      "Mantequilla de maní 100%",
+      "Chocolate 70%"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Salsa asiática, langostinos el lunes y cerdo crispy",
+   "theme": "Oriental",
+   "fritura": "Cerdo crispy de panko y ajonjolí",
+   "platos": [
+    {
+     "letter": "A",
+     "days": "Lun-mar",
+     "name": "Quinua con langostinos al kion",
+     "fullName": "Quinua con langostinos al kion",
+     "desc": "Bowl de quinua con langostinos salteados al kion y verduras en juliana",
+     "spices": "Salsa asiática + 1 cdta de kion rallado + ½ cdta de cinco especias (o sustituto) + hojuelas de chile",
+     "cold": "Refrigerado; un chorrito de agua al recalentar",
+     "slug": "quinua-con-langostinos-al-kion"
+    },
+    {
+     "letter": "B",
+     "days": "Mié-jue",
+     "name": "Cerdo crispy con salsa de maní",
+     "fullName": "Cerdo crispy con salsa de maní",
+     "desc": "Lomo de cerdo crispy + ½ tz de arroz integral + brócoli; salsa de maní aparte",
+     "spices": "15-30 min: 2 cdas de salsa asiática + 1 cdta de ajo en polvo + ½ cdta de jengibre + ½ cdta de pimentón ahumado; panko con ajonjolí",
+     "cold": "Mié refrigerado; jue congelado",
+     "slug": "cerdo-crispy-con-salsa-de-mani"
+    },
+    {
+     "letter": "C",
+     "days": "Vie",
+     "name": "Chaufa chifero de quinua con res",
+     "fullName": "Chaufa chifero de quinua con res (adaptado de goodfoodpapi)",
+     "desc": "Chaufa de quinua con res en tiras, huevo, cebolla china y verduras, con pachikay y premix de caldo, sillao y ostión",
+     "spices": "Res: sillao, kion, ajo, maicena, cinco especias (o sustituto), pimienta. Pachikay: 1 cda de aceite con ajo, kion y parte blanca de cebolla china. Premix: 4 cdas de caldo de pollo + 2 cdas de sillao bajo en sodio + 1 cda de ostión",
+     "cold": "Congelado",
+     "slug": "chaufa-de-quinua-con-res"
+    }
+   ],
+   "cenas": [
+    {
+     "slot": "C1",
+     "days": "Lun, mié y vie",
+     "name": "Sopa de pollo al kion",
+     "slug": "sopa-de-pollo-al-kion"
+    },
+    {
+     "slot": "C2",
+     "days": "Mar y jue",
+     "name": "Wrap de huevo y espinaca",
+     "slug": "wrap-de-huevo-y-espinaca"
+    }
+   ],
+   "frasco": {
+    "name": "Cheesecake de fresa",
+    "slug": "overnight-oats-cheesecake-de-fresa"
+   },
+   "horneado": {
+    "name": "Galletas de avena y plátano",
+    "slug": "galletas-de-avena-y-platano"
+   },
+   "sat": [
+    "El mercado: lomo de cerdo, bistec en tiras, pollo, huevos, verduras y fruta",
+    "Metro o Tottus: lácteos, pan, langostinos congelados",
+    "Langostinos al congelador; en la noche, pasarlos al refrigerador"
+   ],
+   "sun": [
+    "Cocina de 2 h 15"
+   ],
+   "rhythm": {
+    "sabado": "El mercado: lomo de cerdo, bistec en tiras, pollo, huevos, verduras y fruta. Metro o Tottus: lácteos, pan, langostinos congelados",
+    "domingo": "Cocina de 2 h 15",
+    "miercoles": "Lechuga o pepino, palta, plátano"
+   },
+   "menu": [
+    {
+     "day": "Lun",
+     "dayName": "Lunes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + piña",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Quinua con langostinos al kion",
+      "plato": "A",
+      "slug": "quinua-con-langostinos-al-kion"
+     },
+     "dulce": {
+      "text": "Cheesecake",
+      "slug": "overnight-oats-cheesecake-de-fresa"
+     },
+     "cena": {
+      "text": "Sopa de pollo",
+      "slot": "C1",
+      "slug": "sopa-de-pollo-al-kion"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mar",
+     "dayName": "Martes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Quinua con langostinos al kion",
+      "plato": "A",
+      "slug": "quinua-con-langostinos-al-kion"
+     },
+     "dulce": {
+      "text": "Cheesecake",
+      "slug": "overnight-oats-cheesecake-de-fresa"
+     },
+     "cena": {
+      "text": "Wrap de huevo",
+      "slot": "C2",
+      "slug": "wrap-de-huevo-y-espinaca"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mié",
+     "dayName": "Miércoles",
+     "desayuno": {
+      "text": "Cheesecake + mandarina",
+      "slug": "overnight-oats-cheesecake-de-fresa"
+     },
+     "almuerzo": {
+      "text": "Cerdo crispy con salsa de maní",
+      "plato": "B",
+      "slug": "cerdo-crispy-con-salsa-de-mani"
+     },
+     "dulce": {
+      "text": "Galleta",
+      "slug": "galletas-de-avena-y-platano"
+     },
+     "cena": {
+      "text": "Sopa de pollo",
+      "slot": "C1",
+      "slug": "sopa-de-pollo-al-kion"
+     },
+     "night": "Comprar reposición. Pasar el Plato B del jueves al refrigerador"
+    },
+    {
+     "day": "Jue",
+     "dayName": "Jueves",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + sandía",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Cerdo crispy con salsa de maní",
+      "plato": "B",
+      "slug": "cerdo-crispy-con-salsa-de-mani"
+     },
+     "dulce": {
+      "text": "Galleta",
+      "slug": "galletas-de-avena-y-platano"
+     },
+     "cena": {
+      "text": "Wrap de huevo",
+      "slot": "C2",
+      "slug": "wrap-de-huevo-y-espinaca"
+     },
+     "night": "Pasar el chaufa y la sopa del viernes al refrigerador"
+    },
+    {
+     "day": "Vie",
+     "dayName": "Viernes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Chaufa chifero de quinua con res",
+      "plato": "C",
+      "slug": "chaufa-de-quinua-con-res"
+     },
+     "dulce": {
+      "text": "Galleta",
+      "slug": "galletas-de-avena-y-platano"
+     },
+     "cena": {
+      "text": "Sopa de pollo",
+      "slot": "C1",
+      "slug": "sopa-de-pollo-al-kion"
+     },
+     "night": "Revisar y armar la lista"
+    }
+   ],
+   "timeline": [
+    {
+     "time": "0:00-0:20",
+     "ollas": "Quinua (300 g) y arroz (200 g); pollo de cenas (400 g) hervido con kion, deja 2 L de caldo (separar 4 cdas para el premix del chaufa). Marinar cerdo y res",
+     "airfryer": "Horno a 180 °C: galletas (25 min)"
+    },
+    {
+     "time": "0:20-0:50",
+     "ollas": "Salsa asiática; saltear verduras en 2 tandas; langostinos",
+     "airfryer": "Cerdo crispy, tanda 1 (180 °C, 12-14 min)"
+    },
+    {
+     "time": "0:50-1:20",
+     "ollas": "Res en tiras al kion; pachikay; chaufa con huevo, quinua y premix; blanquear brócoli",
+     "airfryer": "Cerdo crispy, tanda 2; reposo 3 min y enfriar sobre rejilla"
+    },
+    {
+     "time": "1:20-2:15",
+     "ollas": "Salsa de maní; mermelada de chía",
+     "airfryer": "6 frascos de cheesecake; porcionar, congelar jueves y viernes, etiquetar"
+    }
+   ],
+   "shop": [
+    {
+     "store": "El mercado",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Proteínas",
+       "items": [
+        {
+         "id": "s2-0",
+         "text": "Lomo de cerdo, 600 g, sin grasa exterior (Plato B)"
+        },
+        {
+         "id": "s2-1",
+         "text": "Bistec de tapa o cadera, 300 g, en tiras (Plato C)"
+        },
+        {
+         "id": "s2-2",
+         "text": "Pollo, 400 g, pechuga o pierna sin piel (caldo de cenas)"
+        },
+        {
+         "id": "s2-3",
+         "text": "Huevos, 1 plancha de 30"
+        }
+       ]
+      },
+      {
+       "name": "Verduras",
+       "items": [
+        {
+         "id": "s2-4",
+         "text": "Pimiento rojo, 2"
+        },
+        {
+         "id": "s2-5",
+         "text": "Zanahoria, 3"
+        },
+        {
+         "id": "s2-6",
+         "text": "Champiñones, 250 g"
+        },
+        {
+         "id": "s2-7",
+         "text": "Vainitas, 250 g"
+        },
+        {
+         "id": "s2-8",
+         "text": "Cebolla china, 1 atado"
+        },
+        {
+         "id": "s2-9",
+         "text": "Kion, 1 trozo grande"
+        },
+        {
+         "id": "s2-10",
+         "text": "Cebolla roja, 2"
+        },
+        {
+         "id": "s2-11",
+         "text": "Brócoli, 2"
+        },
+        {
+         "id": "s2-12",
+         "text": "Espinaca, 1 atado (wraps de huevo)"
+        },
+        {
+         "id": "s2-13",
+         "text": "Tomate, 2 (wraps de huevo)"
+        },
+        {
+         "id": "s2-14",
+         "text": "Ajo"
+        },
+        {
+         "id": "s2-15",
+         "text": "Limones, 6"
+        }
+       ]
+      },
+      {
+       "name": "Frutas",
+       "items": [
+        {
+         "id": "s2-16",
+         "text": "Plátano, 9 (2 muy maduros para las galletas)"
+        },
+        {
+         "id": "s2-17",
+         "text": "Piña, 1 chica"
+        },
+        {
+         "id": "s2-18",
+         "text": "Sandía, ¼"
+        },
+        {
+         "id": "s2-19",
+         "text": "Mandarina, 6"
+        },
+        {
+         "id": "s2-20",
+         "text": "Palta, 2"
+        },
+        {
+         "id": "s2-21",
+         "text": "Fresas frescas, 250 g (o la fresa congelada)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Congelados",
+       "items": [
+        {
+         "id": "s2-22",
+         "text": "Langostinos pelados congelados, 500 g"
+        }
+       ]
+      },
+      {
+       "name": "Lácteos",
+       "items": [
+        {
+         "id": "s2-23",
+         "text": "Yogur griego natural sin azúcar, 500 g"
+        },
+        {
+         "id": "s2-24",
+         "text": "Queso crema, 100 g"
+        },
+        {
+         "id": "s2-25",
+         "text": "Leche, 1 L"
+        }
+       ]
+      },
+      {
+       "name": "Pan",
+       "items": [
+        {
+         "id": "s2-26",
+         "text": "Pan integral de molde, 1"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Miércoles",
+     "note": "",
+     "sections": [
+      {
+       "name": "Reposición",
+       "items": [
+        {
+         "id": "s2-27",
+         "text": "Lechuga o pepino, 1"
+        },
+        {
+         "id": "s2-28",
+         "text": "Palta, 1"
+        },
+        {
+         "id": "s2-29",
+         "text": "Plátano, 3"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shopCount": 30,
+   "keyIngredients": [
+    {
+     "group": "Proteínas",
+     "items": [
+      "Lomo de cerdo",
+      "Bistec de tapa",
+      "Pollo",
+      "Huevos",
+      "Langostinos"
+     ]
+    },
+    {
+     "group": "Verduras y frutas",
+     "items": [
+      "Pimiento rojo",
+      "Zanahoria",
+      "Champiñones",
+      "Vainitas",
+      "Cebolla china",
+      "Kion",
+      "Cebolla roja",
+      "Brócoli",
+      "Espinaca",
+      "Tomate",
+      "Plátano",
+      "Piña",
+      "Sandía",
+      "Mandarina",
+      "Palta",
+      "Fresas frescas",
+      "Lechuga o pepino"
+     ]
+    },
+    {
+     "group": "Despensa y lácteos",
+     "items": [
+      "Yogur griego",
+      "Queso crema",
+      "Leche",
+      "Pan integral de molde"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Un picadillo, chuleta ahumada y el frasco proteico de goodfoodpapi",
+   "theme": "Mediterráneo y rioplatense",
+   "fritura": "Empanadas de carne en airfryer",
+   "platos": [
+    {
+     "letter": "A",
+     "days": "Lun-mar",
+     "name": "Pollo cremoso provenzal",
+     "fullName": "Pollo cremoso provenzal",
+     "desc": "Pollo en salsa cremosa con champiñón, pimiento asado y espinaca + ¾ tz de arroz integral",
+     "spices": "1 cda de mediterránea + ½ cdta de pimentón ahumado + hojuelas de chile; leche evaporada light",
+     "cold": "Refrigerado",
+     "slug": "pollo-cremoso-provenzal"
+    },
+    {
+     "letter": "B",
+     "days": "Mié-jue",
+     "name": "Empanadas de carne + ensalada de lentejas",
+     "fullName": "Empanadas de carne + ensalada de lentejas",
+     "desc": "3 empanadas por persona + ensalada de lentejas, tomate y pepino, vinagreta aparte",
+     "spices": "Picadillo: 1 cdta de comino, 1 de pimentón dulce, 1 de orégano y 1 pizca de canela por 450 g. Vinagreta: limón, aceite, ½ cdta de comino",
+     "cold": "Empanadas y lentejas del jueves congeladas",
+     "slug": "empanadas-de-carne-y-ensalada-de-lentejas"
+    },
+    {
+     "letter": "C",
+     "days": "Vie",
+     "name": "Chuleta de cerdo ahumada con chimichurri",
+     "fullName": "Chuleta de cerdo ahumada con chimichurri",
+     "desc": "Chuleta en tiras + camote al horno + vainitas + chimichurri de la casa",
+     "spices": "1 cdta de ahumada por chuleta + jugo de ½ naranja + 1 cda de limón + ajo + 1 cdta de mostaza + sal, 30 min a 12 h",
+     "cold": "Congelado; chimichurri refrigerado aparte",
+     "slug": "chuleta-de-cerdo-ahumada"
+    }
+   ],
+   "cenas": [
+    {
+     "slot": "C1",
+     "days": "Lun, mié y vie",
+     "name": "Pita shawarma de garbanzos crocantes",
+     "slug": "pita-shawarma-de-garbanzos"
+    },
+    {
+     "slot": "C2",
+     "days": "Mar y jue",
+     "name": "Bowl tibio de camote, atún y espinaca",
+     "slug": "bowl-de-camote-y-atun"
+    }
+   ],
+   "frasco": {
+    "name": "Proteico de chocolate y maní",
+    "slug": "frasco-proteico-chocolate-y-mani"
+   },
+   "horneado": {
+    "name": "Brownie de camote",
+    "slug": "brownie-de-camote"
+   },
+   "sat": [
+    "El mercado: pollo, carne molida, chuleta de cerdo, huevos, verduras y fruta",
+    "Metro o Tottus: quincenal 2 + lácteos",
+    "Carne molida abajo en el refrigerador: se cocina mañana sin falta. Marinar las chuletas en la noche"
+   ],
+   "sun": [
+    "Cocina de 2 h 30"
+   ],
+   "rhythm": {
+    "sabado": "El mercado: pollo, carne molida, chuleta de cerdo, huevos, verduras y fruta. Metro o Tottus: quincenal 2 + lácteos",
+    "domingo": "Cocina de 2 h 30",
+    "miercoles": "Palta, plátano, tomate"
+   },
+   "menu": [
+    {
+     "day": "Lun",
+     "dayName": "Lunes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + uva",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Pollo cremoso provenzal",
+      "plato": "A",
+      "slug": "pollo-cremoso-provenzal"
+     },
+     "dulce": {
+      "text": "Frasco proteico",
+      "slug": "frasco-proteico-chocolate-y-mani"
+     },
+     "cena": {
+      "text": "Pita de garbanzos",
+      "slot": "C1",
+      "slug": "pita-shawarma-de-garbanzos"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mar",
+     "dayName": "Martes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Pollo cremoso provenzal",
+      "plato": "A",
+      "slug": "pollo-cremoso-provenzal"
+     },
+     "dulce": {
+      "text": "Frasco proteico",
+      "slug": "frasco-proteico-chocolate-y-mani"
+     },
+     "cena": {
+      "text": "Bowl de camote y atún",
+      "slot": "C2",
+      "slug": "bowl-de-camote-y-atun"
+     },
+     "night": "Pasar las empanadas del miércoles al refrigerador"
+    },
+    {
+     "day": "Mié",
+     "dayName": "Miércoles",
+     "desayuno": {
+      "text": "Frasco proteico + mandarina",
+      "slug": "frasco-proteico-chocolate-y-mani"
+     },
+     "almuerzo": {
+      "text": "Empanadas de carne + ensalada de lentejas",
+      "plato": "B",
+      "slug": "empanadas-de-carne-y-ensalada-de-lentejas"
+     },
+     "dulce": {
+      "text": "Brownie",
+      "slug": "brownie-de-camote"
+     },
+     "cena": {
+      "text": "Pita de garbanzos",
+      "slot": "C1",
+      "slug": "pita-shawarma-de-garbanzos"
+     },
+     "night": "Comprar reposición. Pasar empanadas y lentejas del jueves al refrigerador; cortar tomate y pepino"
+    },
+    {
+     "day": "Jue",
+     "dayName": "Jueves",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + manzana",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Empanadas de carne + ensalada de lentejas",
+      "plato": "B",
+      "slug": "empanadas-de-carne-y-ensalada-de-lentejas"
+     },
+     "dulce": {
+      "text": "Brownie",
+      "slug": "brownie-de-camote"
+     },
+     "cena": {
+      "text": "Bowl de camote y atún",
+      "slot": "C2",
+      "slug": "bowl-de-camote-y-atun"
+     },
+     "night": "Pasar la chuleta y los garbanzos del viernes al refrigerador"
+    },
+    {
+     "day": "Vie",
+     "dayName": "Viernes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Chuleta de cerdo ahumada con chimichurri",
+      "plato": "C",
+      "slug": "chuleta-de-cerdo-ahumada"
+     },
+     "dulce": {
+      "text": "Brownie",
+      "slug": "brownie-de-camote"
+     },
+     "cena": {
+      "text": "Pita de garbanzos",
+      "slot": "C1",
+      "slug": "pita-shawarma-de-garbanzos"
+     },
+     "night": "Revisar y armar la lista"
+    }
+   ],
+   "timeline": [
+    {
+     "time": "0:00-0:20",
+     "ollas": "Lentejas (200 g); arroz (200 g); camote del brownie (500 g) a sancochar",
+     "airfryer": "Garbanzos (3 latas) con ahumada + curry, 200 °C, 12-15 min (porción del viernes al congelador)"
+    },
+    {
+     "time": "0:20-0:50",
+     "ollas": "Picadillo (450 g de carne, a 71 °C)",
+     "airfryer": "Horno a 180 °C: brownie (25-30 min); abajo, camote en gajos para el C y cenas (800 g, 25-30 min)"
+    },
+    {
+     "time": "0:50-1:20",
+     "ollas": "Pollo cremoso; blanquear vainitas",
+     "airfryer": "Empanadas, tanda 1"
+    },
+    {
+     "time": "1:20-2:30",
+     "ollas": "Enfriar; vinagreta; chimichurri",
+     "airfryer": "Empanadas, tanda 2; chuletas (200 °C, 10-14 min, reposo 3 min); 6 frascos proteicos; porcionar y congelar"
+    }
+   ],
+   "shop": [
+    {
+     "store": "El mercado",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Proteínas",
+       "items": [
+        {
+         "id": "s3-0",
+         "text": "Pechuga en filetes, 600 g (Plato A)"
+        },
+        {
+         "id": "s3-1",
+         "text": "Carne molida especial, 450 g (empanadas)"
+        },
+        {
+         "id": "s3-2",
+         "text": "Chuleta de cerdo deshuesada o lomo de cerdo, 300 g (Plato C)"
+        },
+        {
+         "id": "s3-3",
+         "text": "Huevos, 15"
+        }
+       ]
+      },
+      {
+       "name": "Verduras",
+       "items": [
+        {
+         "id": "s3-4",
+         "text": "Camote, 1,3 kg (500 g brownie + 400 g Plato C + 400 g cenas)"
+        },
+        {
+         "id": "s3-5",
+         "text": "Espinaca, 2 atados"
+        },
+        {
+         "id": "s3-6",
+         "text": "Champiñones, 200 g"
+        },
+        {
+         "id": "s3-7",
+         "text": "Vainitas, 300 g"
+        },
+        {
+         "id": "s3-8",
+         "text": "Pimiento rojo, 1"
+        },
+        {
+         "id": "s3-9",
+         "text": "Cebolla blanca, 3; cebolla morada, 1"
+        },
+        {
+         "id": "s3-10",
+         "text": "Tomate, 6"
+        },
+        {
+         "id": "s3-11",
+         "text": "Pepino, 2"
+        },
+        {
+         "id": "s3-12",
+         "text": "Lechuga, 1"
+        },
+        {
+         "id": "s3-13",
+         "text": "Perejil, 1 atado (chimichurri)"
+        },
+        {
+         "id": "s3-14",
+         "text": "Naranja, 1 (marinada)"
+        },
+        {
+         "id": "s3-15",
+         "text": "Ajo, limones"
+        }
+       ]
+      },
+      {
+       "name": "Frutas",
+       "items": [
+        {
+         "id": "s3-16",
+         "text": "Plátano, 11 (2 para los frascos)"
+        },
+        {
+         "id": "s3-17",
+         "text": "Uva, 500 g"
+        },
+        {
+         "id": "s3-18",
+         "text": "Mandarina, 6"
+        },
+        {
+         "id": "s3-19",
+         "text": "Manzana, 3"
+        },
+        {
+         "id": "s3-20",
+         "text": "Palta, 2"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Sábado",
+     "note": "quincenal 2",
+     "sections": [
+      {
+       "name": "Lácteos",
+       "items": [
+        {
+         "id": "s3-21",
+         "text": "Yogur griego natural sin azúcar, 1 kg"
+        },
+        {
+         "id": "s3-22",
+         "text": "Leche, 1 L"
+        },
+        {
+         "id": "s3-23",
+         "text": "Queso parmesano o fresco, 100 g"
+        }
+       ]
+      },
+      {
+       "name": "Pan, masas y snacks",
+       "items": [
+        {
+         "id": "s3-24",
+         "text": "Pan integral de molde, 1"
+        },
+        {
+         "id": "s3-25",
+         "text": "Discos para empanada, 12"
+        },
+        {
+         "id": "s3-26",
+         "text": "Tortillas integrales, 1 paquete (wraps de pescado S4; se congela)"
+        },
+        {
+         "id": "s3-27",
+         "text": "Mantequilla de maní 100%, 1 pote"
+        },
+        {
+         "id": "s3-28",
+         "text": "Chocolate 70%, 1 tableta"
+        },
+        {
+         "id": "s3-29",
+         "text": "Dátiles, 100 g (si no quedan)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Miércoles",
+     "note": "",
+     "sections": [
+      {
+       "name": "Reposición",
+       "items": [
+        {
+         "id": "s3-30",
+         "text": "Palta, 1"
+        },
+        {
+         "id": "s3-31",
+         "text": "Plátano, 3"
+        },
+        {
+         "id": "s3-32",
+         "text": "Tomate, 2"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shopCount": 33,
+   "keyIngredients": [
+    {
+     "group": "Proteínas",
+     "items": [
+      "Pechuga en filetes",
+      "Carne molida especial",
+      "Chuleta de cerdo deshuesada",
+      "Huevos"
+     ]
+    },
+    {
+     "group": "Verduras y frutas",
+     "items": [
+      "Camote",
+      "Espinaca",
+      "Champiñones",
+      "Vainitas",
+      "Pimiento rojo",
+      "Cebolla blanca",
+      "Cebolla morada",
+      "Tomate",
+      "Pepino",
+      "Lechuga",
+      "Perejil",
+      "Naranja",
+      "Plátano",
+      "Uva",
+      "Mandarina",
+      "Manzana",
+      "Palta"
+     ]
+    },
+    {
+     "group": "Despensa y lácteos",
+     "items": [
+      "Yogur griego",
+      "Leche",
+      "Queso parmesano o fresco",
+      "Pan integral de molde",
+      "Discos para empanada",
+      "Tortillas integrales",
+      "Mantequilla de maní 100%",
+      "Chocolate 70%",
+      "Dátiles"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Pescado crocante el lunes, albóndigas el viernes y pie de manzana",
+   "theme": "Pescado y cremas",
+   "fritura": "Chicharrón de pescado y gajos de camote",
+   "platos": [
+    {
+     "letter": "A",
+     "days": "Lun-mar",
+     "name": "Wrap de pescado crocante + gajos",
+     "fullName": "Wrap de pescado crocante + gajos",
+     "desc": "Wrap de pescado + col morada + mayo fit acevichada aparte (adaptada de goodfoodpapi) + gajos de camote",
+     "spices": "Pescado: limón, ajo en polvo, ½ cdta de ahumada; panko con mediterránea. Gajos: ahumada",
+     "cold": "Refrigerado; se come frío",
+     "slug": "wrap-de-pescado-crocante"
+    },
+    {
+     "letter": "B",
+     "days": "Mié-jue",
+     "name": "Pollo en crema dorada de pimiento",
+     "fullName": "Pollo en crema dorada de pimiento",
+     "desc": "Pollo deshilachado en crema de pimiento asado + ¾ tz de quinua + vainitas",
+     "spices": "1 cdta de cúrcuma + 1 de comino + 1 de pimentón dulce + 1 pizca de nuez moscada; pecanas y queso fresco",
+     "cold": "Mié refrigerado; jue congelado",
+     "slug": "pollo-en-crema-de-pimiento"
+    },
+    {
+     "letter": "C",
+     "days": "Vie",
+     "name": "Albóndigas ahumadas + puré de zapallo",
+     "fullName": "Albóndigas ahumadas + puré de zapallo",
+     "desc": "Albóndigas en airfryer en salsa rápida de tomate + puré de zapallo asado + brócoli",
+     "spices": "300 g de molida + 2 cdas de avena + 1 huevo + ½ cebolla rallada + ajo + 1 cdta de ahumada + ½ cdta de comino + sal",
+     "cold": "Congelado",
+     "slug": "albondigas-ahumadas-pure-de-zapallo"
+    }
+   ],
+   "cenas": [
+    {
+     "slot": "C1",
+     "days": "Lun, mié y vie",
+     "name": "Crema de zapallo asado al curry",
+     "slug": "crema-de-zapallo-al-curry"
+    },
+    {
+     "slot": "C2",
+     "days": "Mar y jue",
+     "name": "Sopita a la minuta",
+     "slug": "sopita-a-la-minuta"
+    }
+   ],
+   "frasco": {
+    "name": "Pie de manzana",
+    "slug": "overnight-oats-pie-de-manzana"
+   },
+   "horneado": {
+    "name": "Energy balls",
+    "slug": "energy-balls-de-avena-y-mani"
+   },
+   "sat": [
+    "El mercado, temprano: pescado, pollo, carne molida, huevos, verduras y fruta",
+    "Metro o Tottus: lácteos, pan",
+    "Pescado y carne molida al refrigerador, en la parte más fría"
+   ],
+   "sun": [
+    "Cocina de 2 h 30"
+   ],
+   "rhythm": {
+    "sabado": "El mercado, temprano: pescado, pollo, carne molida, huevos, verduras y fruta. Metro o Tottus: lácteos, pan",
+    "domingo": "Cocina de 2 h 30",
+    "miercoles": "Palta, plátano, lechuga"
+   },
+   "menu": [
+    {
+     "day": "Lun",
+     "dayName": "Lunes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + naranja",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Wrap de pescado crocante + gajos",
+      "plato": "A",
+      "slug": "wrap-de-pescado-crocante"
+     },
+     "dulce": {
+      "text": "Pie de manzana",
+      "slug": "overnight-oats-pie-de-manzana"
+     },
+     "cena": {
+      "text": "Crema de zapallo",
+      "slot": "C1",
+      "slug": "crema-de-zapallo-al-curry"
+     },
+     "night": "Armar el wrap del martes"
+    },
+    {
+     "day": "Mar",
+     "dayName": "Martes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + plátano",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Wrap de pescado crocante + gajos",
+      "plato": "A",
+      "slug": "wrap-de-pescado-crocante"
+     },
+     "dulce": {
+      "text": "Pie de manzana",
+      "slug": "overnight-oats-pie-de-manzana"
+     },
+     "cena": {
+      "text": "Sopita a la minuta",
+      "slot": "C2",
+      "slug": "sopita-a-la-minuta"
+     },
+     "night": ""
+    },
+    {
+     "day": "Mié",
+     "dayName": "Miércoles",
+     "desayuno": {
+      "text": "Pie de manzana + mango",
+      "slug": "overnight-oats-pie-de-manzana"
+     },
+     "almuerzo": {
+      "text": "Pollo en crema dorada de pimiento",
+      "plato": "B",
+      "slug": "pollo-en-crema-de-pimiento"
+     },
+     "dulce": {
+      "text": "2 energy balls",
+      "slug": "energy-balls-de-avena-y-mani"
+     },
+     "cena": {
+      "text": "Crema de zapallo",
+      "slot": "C1",
+      "slug": "crema-de-zapallo-al-curry"
+     },
+     "night": "Comprar reposición. Pasar el Plato B y la base de sopa del jueves al refrigerador"
+    },
+    {
+     "day": "Jue",
+     "dayName": "Jueves",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + maracuyá",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Pollo en crema dorada de pimiento",
+      "plato": "B",
+      "slug": "pollo-en-crema-de-pimiento"
+     },
+     "dulce": {
+      "text": "2 energy balls",
+      "slug": "energy-balls-de-avena-y-mani"
+     },
+     "cena": {
+      "text": "Sopita a la minuta",
+      "slot": "C2",
+      "slug": "sopita-a-la-minuta"
+     },
+     "night": "Pasar las albóndigas y la crema del viernes al refrigerador"
+    },
+    {
+     "day": "Vie",
+     "dayName": "Viernes",
+     "desayuno": {
+      "text": "2 huevos + pan + palta + naranja",
+      "slug": "huevos-revueltos-cremosos"
+     },
+     "almuerzo": {
+      "text": "Albóndigas ahumadas + puré de zapallo",
+      "plato": "C",
+      "slug": "albondigas-ahumadas-pure-de-zapallo"
+     },
+     "dulce": {
+      "text": "2 energy balls",
+      "slug": "energy-balls-de-avena-y-mani"
+     },
+     "cena": {
+      "text": "Crema de zapallo",
+      "slot": "C1",
+      "slug": "crema-de-zapallo-al-curry"
+     },
+     "night": "Revisar la despensa y armar la lista del mes siguiente"
+    }
+   ],
+   "timeline": [
+    {
+     "time": "0:00-0:20",
+     "ollas": "Quinua (200 g); pollo (600 g) hervido; 1 huevo duro para la mayo fit",
+     "airfryer": "Pimientos, 200 °C, 20 min. Horno a 200 °C: zapallo (2 kg en cubos, 30-35 min)"
+    },
+    {
+     "time": "0:20-0:50",
+     "ollas": "Licuar la crema dorada y agregar el pollo deshilachado",
+     "airfryer": "Pescado, tandas 1 y 2"
+    },
+    {
+     "time": "0:50-1:20",
+     "ollas": "Crema de zapallo al curry; base de sopita a la minuta (carne dorada a 71 °C, sofrito, tomate, agua y papa, sin fideo) y salsa rápida",
+     "airfryer": "Albóndigas (190 °C, 10-12 min); gajos de camote (20 min)"
+    },
+    {
+     "time": "1:20-2:30",
+     "ollas": "Puré de zapallo; blanquear vainitas y brócoli",
+     "airfryer": "Mayo fit acevichada (licuar 2 min); garbanzos tostados; manzana asada; 20 energy balls; 6 frascos; porcionar; sopa del jueves y albóndigas al congelador"
+    }
+   ],
+   "shop": [
+    {
+     "store": "El mercado",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Proteínas",
+       "items": [
+        {
+         "id": "s4-0",
+         "text": "Filete de pescado blanco (jurel o perico), 600 g. Si no hay: tiras de pollo crocante (idea: Crispy Chicken Tacos Fit de goodfoodpapi)"
+        },
+        {
+         "id": "s4-1",
+         "text": "Pechuga de pollo, 600 g (Plato B)"
+        },
+        {
+         "id": "s4-2",
+         "text": "Carne molida especial, 600 g (300 g albóndigas + 300 g sopita a la minuta)"
+        },
+        {
+         "id": "s4-3",
+         "text": "Huevos, 15"
+        }
+       ]
+      },
+      {
+       "name": "Verduras",
+       "items": [
+        {
+         "id": "s4-4",
+         "text": "Camote, 600 g"
+        },
+        {
+         "id": "s4-5",
+         "text": "Papa blanca, 2 (sopita)"
+        },
+        {
+         "id": "s4-6",
+         "text": "Zapallo macre, 2 kg"
+        },
+        {
+         "id": "s4-7",
+         "text": "Pimiento amarillo o rojo, 2"
+        },
+        {
+         "id": "s4-8",
+         "text": "Vainitas, 300 g"
+        },
+        {
+         "id": "s4-9",
+         "text": "Brócoli, 1"
+        },
+        {
+         "id": "s4-10",
+         "text": "Col morada, ¼"
+        },
+        {
+         "id": "s4-11",
+         "text": "Cebolla roja, 2; cebolla blanca, 2"
+        },
+        {
+         "id": "s4-12",
+         "text": "Lechuga, 1; tomate, 4"
+        },
+        {
+         "id": "s4-13",
+         "text": "Ajo, limones"
+        }
+       ]
+      },
+      {
+       "name": "Frutas",
+       "items": [
+        {
+         "id": "s4-14",
+         "text": "Manzana, 3 (frascos)"
+        },
+        {
+         "id": "s4-15",
+         "text": "Naranja, 6"
+        },
+        {
+         "id": "s4-16",
+         "text": "Plátano, 6"
+        },
+        {
+         "id": "s4-17",
+         "text": "Mango, 2"
+        },
+        {
+         "id": "s4-18",
+         "text": "Maracuyá, 4"
+        },
+        {
+         "id": "s4-19",
+         "text": "Palta, 2"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Sábado",
+     "note": "",
+     "sections": [
+      {
+       "name": "Lácteos",
+       "items": [
+        {
+         "id": "s4-20",
+         "text": "Yogur griego natural sin azúcar, 500 g (frascos + mayo fit)"
+        },
+        {
+         "id": "s4-21",
+         "text": "Leche, 1 L"
+        },
+        {
+         "id": "s4-22",
+         "text": "Queso fresco, 250 g"
+        }
+       ]
+      },
+      {
+       "name": "Pan",
+       "items": [
+        {
+         "id": "s4-23",
+         "text": "Pan integral de molde, 1"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "store": "Metro o Tottus",
+     "day": "Miércoles",
+     "note": "",
+     "sections": [
+      {
+       "name": "Reposición",
+       "items": [
+        {
+         "id": "s4-24",
+         "text": "Palta, 1"
+        },
+        {
+         "id": "s4-25",
+         "text": "Plátano, 3"
+        },
+        {
+         "id": "s4-26",
+         "text": "Lechuga, 1"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shopCount": 27,
+   "keyIngredients": [
+    {
+     "group": "Proteínas",
+     "items": [
+      "Filete de pescado blanco",
+      "Pechuga de pollo",
+      "Carne molida especial",
+      "Huevos"
+     ]
+    },
+    {
+     "group": "Verduras y frutas",
+     "items": [
+      "Camote",
+      "Papa blanca",
+      "Zapallo macre",
+      "Pimiento amarillo o rojo",
+      "Vainitas",
+      "Brócoli",
+      "Col morada",
+      "Cebolla roja",
+      "Cebolla blanca",
+      "Lechuga",
+      "Tomate",
+      "Manzana",
+      "Naranja",
+      "Plátano",
+      "Mango",
+      "Maracuyá",
+      "Palta"
+     ]
+    },
+    {
+     "group": "Despensa y lácteos",
+     "items": [
+      "Yogur griego",
+      "Leche",
+      "Queso fresco",
+      "Pan integral de molde"
+     ]
+    }
+   ]
+  }
+ ],
+ "recipes": [
+  {
+   "id": "r-s1a",
+   "slug": "pollo-a-la-olla-ahumado",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Pollo a la olla ahumado",
+   "week": 1,
+   "slot": "Plato A",
+   "days": "Lunes y martes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de pechuga de pollo",
+    "½ de la salsa madre de tomate (1 L total: sofrito de cebolla, ajo, pimiento + 2 envases de tomate triturado)",
+    "Arroz integral (¾ tz cocida por porción)",
+    "Vainitas y zanahoria blanqueadas"
+   ],
+   "spices": "1 cda de mezcla ahumada + 1 cda de vinagre + 1 cda de sillao en la salsa",
+   "steps": [
+    "Hervir el pollo con laurel 20 min; deshilachar.",
+    "Guisar en la salsa con la ahumada, vinagre y sillao 10 min.",
+    "Armar 4 táperes con arroz y verduras."
+   ],
+   "storage": "Refrigerado lunes y martes. Recalentar tapado hasta 74 °C.",
+   "sources": [
+    {
+     "name": "@comocome.pe (TikTok): pollo a la olla",
+     "url": "https://www.tiktok.com/@comocome.pe/video/7433920376024911110"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "pot"
+  },
+  {
+   "id": "r-s1b",
+   "slug": "milanesa-napolitana-de-res",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Milanesa napolitana de res (airfryer)",
+   "week": 1,
+   "slot": "Plato B",
+   "days": "Miércoles y jueves",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de bistec de tapa o cadera en 4 filetes de 0,5-1 cm (goodfoodpapi usa lomo de res; también vale punta de lomo)",
+    "Harina, 2 huevos batidos con 1 cda de mostaza Dijon, sal y pimienta",
+    "Panko con 2 dientes de ajo muy picados y 3 cdas de perejil picado",
+    "¼ de la salsa madre",
+    "Mozzarella, 15 g por filete",
+    "Arroz integral (½ tz por porción) y brócoli"
+   ],
+   "spices": "Filete: jugo de ½ limón, ajo en polvo y sal, 30 min. Panko con ajo, perejil, 1 cda de mediterránea + ralladura de limón",
+   "steps": [
+    "Aplanar los filetes entre dos plásticos si vienen gruesos (goodfoodpapi los presiona con las manos).",
+    "Marinar 30 min; pasar por harina, huevo con Dijon y panko con ajo y perejil, presionando.",
+    "Rociar aceite; airfryer 200 °C por 8-10 min, volteando a la mitad, sin encimar. Mínimo 63 °C al centro.",
+    "Cubrir con salsa y mozzarella; gratinar 2 min."
+   ],
+   "storage": "Miércoles refrigerado; jueves congelado el domingo (pasar al refrigerador la noche anterior). Recalentar tapada 1,5-2 min hasta 74 °C. Adaptación: el caption de goodfoodpapi no muestra el método de cocción; aquí va en airfryer, con bistec de tapa en lugar de lomo y mozzarella medida.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Auténtica Milanesa Napolitana",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7355219488528157958"
+    },
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/recetas-de-carnes-y-aves/pechugas-pollo-empanadas-freidora-aceite-receta-infalible"
+    },
+    {
+     "name": "El Cronista",
+     "url": "https://www.cronista.com/informacion-gral/ni-fritas-ni-al-horno-hacer-milanesas-de-esta-manera-unica-las-hace-mas-saludables-no-salen-secas-y-quedan-bien-doradas/"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "steak"
+  },
+  {
+   "id": "r-s1c",
+   "slug": "lentejas-al-curry",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Lentejas al curry",
+   "week": 1,
+   "slot": "Plato C",
+   "days": "Viernes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Lentejas cocidas a presión",
+    "¼ de la salsa madre",
+    "Arroz integral (½ tz)",
+    "1 huevo duro por persona"
+   ],
+   "spices": "2 cdtas de curry de la casa + 1 cdta de cúrcuma en el sofrito",
+   "steps": [
+    "Sofreír el curry y la cúrcuma 1 min.",
+    "Agregar lentejas y salsa; guisar 10 min.",
+    "Porcionar con arroz; huevo duro aparte."
+   ],
+   "storage": "Congelado para el viernes; huevo refrigerado aparte.",
+   "sources": [
+    {
+     "name": "¡HOLA!: lentejas estofadas, día 2 con curry",
+     "url": "https://www.hola.com/cocina/noticias/20210312185914/batchcooking-menu-recetas-faciles/"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "bowl"
+  },
+  {
+   "id": "r-s2a",
+   "slug": "quinua-con-langostinos-al-kion",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Quinua con langostinos al kion",
+   "week": 2,
+   "slot": "Plato A",
+   "days": "Lunes y martes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "500 g de langostinos pelados congelados",
+    "Quinua cocida",
+    "Pimiento, zanahoria, champiñones, vainitas, cebolla roja en juliana",
+    "Salsa asiática madre (sillao, ostión, kion, ajo, aceite de ajonjolí, maicena, agua)"
+   ],
+   "spices": "1 cdta de kion rallado + ½ cdta de cinco especias (o ½ cdta canela, 1 pizca clavo, ½ cdta pimienta, 1 cdta kion) + hojuelas de chile",
+   "steps": [
+    "Descongelar los langostinos el sábado en la noche en el refrigerador.",
+    "Saltear verduras en 2 tandas a fuego alto.",
+    "Saltear langostinos 2-3 min hasta opacos; unir con salsa y quinua."
+   ],
+   "storage": "Refrigerado; solo lunes y martes. Recalentar con un chorrito de agua.",
+   "sources": [
+    {
+     "name": "¡HOLA!: batch cooking de Laura Sacristán (@shoothecook)",
+     "url": "https://www.hola.com/cocina/noticias/20251128869983/libro-batchcooking-cocina-dos-horas-comer-toda-la-semana-laura-sacristan/"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "shrimp"
+  },
+  {
+   "id": "r-s2b",
+   "slug": "cerdo-crispy-con-salsa-de-mani",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Cerdo crispy con salsa de maní (airfryer)",
+   "week": 2,
+   "slot": "Plato B",
+   "days": "Miércoles y jueves",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de lomo de cerdo sin grasa exterior, en cubos de 2-3 cm",
+    "Maicena, 1-2 huevos, panko con ajonjolí",
+    "Arroz integral (½ tz) y brócoli",
+    "Salsa de maní: 3 cdas de mantequilla de maní, 3 cdas de salsa asiática, jugo de 1 limón, ½ cdta de curry de la casa, chile, agua tibia"
+   ],
+   "spices": "Marinada 15-30 min: 2 cdas de salsa asiática + 1 cdta de ajo en polvo + ½ cdta de jengibre + ½ cdta de pimentón ahumado",
+   "steps": [
+    "Marinar el cerdo.",
+    "Pasar por maicena, huevo y panko con ajonjolí; rociar aceite.",
+    "Airfryer 180 °C por 12-14 min, agitando a los 6. Centro a 63 °C y reposo de 3 min.",
+    "Enfriar sobre rejilla; salsa de maní en frasquito aparte."
+   ],
+   "storage": "Miércoles refrigerado; jueves congelado. Recalentar sin salsa 1,5 min sobre papel absorbente; salsa al servir.",
+   "sources": [
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/recetas-de-carnes-y-aves/nuggets-pollo-freidora-aire-version-saludable-clasico-comida-rapida-americana"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "chop"
+  },
+  {
+   "id": "r-s2c",
+   "slug": "chaufa-de-quinua-con-res",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Chaufa chifero de quinua con res",
+   "week": 2,
+   "slot": "Plato C",
+   "days": "Viernes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "300 g de bistec de tapa o cadera (o lomo fino) en tiras finas contra la fibra",
+    "Quinua cocida y fría (goodfoodpapi usa 800 g de arroz de ayer)",
+    "2 huevos",
+    "Cebolla china: la parte blanca para el pachikay, la verde al final",
+    "Pachikay: 1 cda de aceite, 1 diente de ajo, 1 trozo de kion (goodfoodpapi usa 80 ml de aceite)",
+    "Premix: 4 cdas del caldo de pollo de las cenas + 2 cdas de sillao bajo en sodio + 1 cda de salsa de ostión",
+    "Verduras de la semana en juliana",
+    "Unas gotas de aceite de ajonjolí"
+   ],
+   "spices": "Res: 1 cda de sillao + 1 cdta de kion rallado + 1 diente de ajo + 1 cdta de maicena + ½ cdta de cinco especias (o sustituto) + pimienta, 15 min. Chaufa: pimienta blanca y ½ cdta de curry de la casa",
+   "steps": [
+    "Marinar la res 15 min.",
+    "Sartén muy caliente: saltear la res en 2 tandas de 2-3 min y reservar.",
+    "Pachikay: dorar a fuego medio el ajo, el kion y la parte blanca de la cebolla china en 1 cda de aceite.",
+    "Revolver ahí los huevos, sumar verduras y quinua a fuego alto, verter el premix y saltear 2 min.",
+    "Volver la res, cebolla china verde y unas gotas de ajonjolí."
+   ],
+   "storage": "Congelado para el viernes. Recalentar tapado con 1 cda de agua, 2 min, removiendo a la mitad. Adaptación: quinua en lugar de arroz blanco, res en lugar de pierna de pollo, 1 cda de aceite en lugar de 80 ml, sillao bajo en sodio y sin GMS.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Chaufa Chifero Perfecto",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7525197744139423032"
+    },
+    {
+     "name": "@comocome.pe (TikTok): chaufa de quinua",
+     "url": "https://www.tiktok.com/@comocome.pe/video/7354905141033700614"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "bowl"
+  },
+  {
+   "id": "r-s3a",
+   "slug": "pollo-cremoso-provenzal",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Pollo cremoso provenzal",
+   "week": 3,
+   "slot": "Plato A",
+   "days": "Lunes y martes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de pechuga en filetes",
+    "Champiñones, pimiento asado, espinaca",
+    "Leche evaporada light",
+    "Parmesano o queso fresco",
+    "Arroz integral (¾ tz)"
+   ],
+   "spices": "1 cda de mediterránea + ½ cdta de pimentón ahumado + hojuelas de chile",
+   "steps": [
+    "Dorar el pollo sazonado.",
+    "Saltear champiñón y pimiento; agregar leche evaporada y queso.",
+    "Volver el pollo, sumar espinaca y cocinar hasta 74 °C."
+   ],
+   "storage": "Refrigerado lunes y martes.",
+   "sources": [
+    {
+     "name": "¡HOLA!: batch cooking de Laura Sacristán (@shoothecook)",
+     "url": "https://www.hola.com/cocina/noticias/20251128869983/libro-batchcooking-cocina-dos-horas-comer-toda-la-semana-laura-sacristan/"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "drumstick"
+  },
+  {
+   "id": "r-s3b",
+   "slug": "empanadas-de-carne-y-ensalada-de-lentejas",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Empanadas de carne (airfryer) + ensalada de lentejas",
+   "week": 3,
+   "slot": "Plato B",
+   "days": "Miércoles y jueves",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "450 g de carne molida especial",
+    "12 discos para empanada",
+    "1 huevo para pincelar",
+    "Lentejas cocidas, tomate, pepino"
+   ],
+   "spices": "Picadillo: 1 cdta de comino, 1 de pimentón dulce, 1 de orégano y 1 pizca de canela. Vinagreta: limón, aceite, ½ cdta de comino",
+   "steps": [
+    "Cocinar el picadillo con cebolla hasta 71 °C; enfriar y escurrir.",
+    "Rellenar los discos, pincelar con huevo.",
+    "Airfryer 180 °C por 10-12 min, volteando a la mitad.",
+    "Congelar apenas se enfríen."
+   ],
+   "storage": "Ambos días congeladas; pasar al refrigerador la noche anterior. 30-40 s de microondas sobre papel absorbente. Lentejas del jueves congeladas; tomate y pepino se cortan la noche anterior.",
+   "sources": [
+    {
+     "name": "Vía País (Paulina Cocina)",
+     "url": "https://viapais.com.ar/gourmet/freidora-de-aire-si-o-no-la-respuesta-definitiva-de-paulina-cocina/"
+    },
+    {
+     "name": "¡HOLA! 2023",
+     "url": "https://www.hola.com/belleza/caraycuerpo/20231004240205/recetas-faciles-comer-oficina-nutricionistas-peso-ideal/"
+    },
+    {
+     "name": "Los Andes: almuerzos de la semana (hamburguesas con puré de calabaza, lentejas con atún)",
+     "url": "https://www.losandes.com.ar/por-las-redes/que-comer-esta-semana-5-recetas-faciles-ricas-y-harina-tus-almuerzos-del-3-al-7-marzo-n5982522"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "empanada"
+  },
+  {
+   "id": "r-s3c",
+   "slug": "chuleta-de-cerdo-ahumada",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Chuleta de cerdo ahumada con chimichurri (airfryer)",
+   "week": 3,
+   "slot": "Plato C",
+   "days": "Viernes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "300 g de chuleta de cerdo deshuesada o medallones de lomo, 1,5-2 cm",
+    "Camote al horno",
+    "Vainitas blanqueadas",
+    "Chimichurri: 2 cdas de mediterránea, 3 cdas de aceite de oliva, 2 cdas de vinagre, 1 ajo, 2 cdas de perejil, sal"
+   ],
+   "spices": "1 cdta de ahumada por chuleta + jugo de ½ naranja + 1 cda de limón + 1 diente de ajo + 1 cdta de mostaza + sal",
+   "steps": [
+    "Marinar de 30 min a 12 h en el refrigerador.",
+    "Secar, rociar aceite; airfryer 200 °C por 10-14 min volteando a la mitad.",
+    "Centro a 63 °C y reposo de 3 min.",
+    "Cortar en tiras antes de congelar."
+   ],
+   "storage": "Congelado para el viernes; chimichurri refrigerado aparte (1 semana). Recalentar tapado con 1 cda de agua, 1,5-2 min. Variante en moderación (1 vez al mes): chicharrón de cerdo magro en cubos, 200 °C 15-18 min.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "chop"
+  },
+  {
+   "id": "r-s4a",
+   "slug": "wrap-de-pescado-crocante",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Wrap de pescado crocante + gajos de camote",
+   "week": 4,
+   "slot": "Plato A",
+   "days": "Lunes y martes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de pescado blanco (jurel o perico) en tiras",
+    "Harina con maicena, huevo con agua, panko",
+    "Tortillas integrales, col morada",
+    "Mayo fit acevichada (adaptada de goodfoodpapi): 1 huevo duro pequeño, 150 g de yogur griego (en lugar de 350 g de skyr o quark), ½ cdta de mostaza, jugo de 2 limones, 1 cdta de aceite, 1 cda de sillao bajo en sodio, ½ cdta de aceite de ajonjolí, sal, pimienta y hojuelas de chile o togarashi",
+    "600 g de camote en gajos"
+   ],
+   "spices": "Pescado: limón, ajo en polvo, ½ cdta de ahumada; panko con mediterránea. Gajos: ahumada y 1 cda de aceite por kilo",
+   "steps": [
+    "Empanizar las tiras.",
+    "Airfryer 200 °C 5 min, voltear, 5 min más, en una capa.",
+    "Gajos 200 °C 18-22 min agitando a la mitad.",
+    "Mayo fit: licuar todo 1-2 min y guardar en 2 frasquitos.",
+    "Armar el wrap la noche anterior o en la mañana; la mayo va aparte."
+   ],
+   "storage": "Refrigerado; se come frío, nunca se recalienta. Solo lunes y martes; la mayo fit dura hasta el martes. Adaptación: un tercio de la receta original, con yogur griego y sin hondashi.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): mayo acevichada proteica",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7325180466112302342"
+    },
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/bacalao-rebozado-freidora-aceite-receta-sorprendente-que-cocinar-cualquier-pescado"
+    },
+    {
+     "name": "Vía País (Paulina Cocina)",
+     "url": "https://viapais.com.ar/gourmet/freidora-de-aire-si-o-no-la-respuesta-definitiva-de-paulina-cocina/"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "fish"
+  },
+  {
+   "id": "r-s4b",
+   "slug": "pollo-en-crema-de-pimiento",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Pollo en crema dorada de pimiento",
+   "week": 4,
+   "slot": "Plato B",
+   "days": "Miércoles y jueves",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "600 g de pechuga hervida y deshilachada",
+    "2 pimientos amarillos o rojos asados",
+    "Pecanas, queso fresco",
+    "Quinua (¾ tz), vainitas"
+   ],
+   "spices": "1 cdta de cúrcuma + 1 de comino + 1 de pimentón dulce + 1 pizca de nuez moscada",
+   "steps": [
+    "Asar pimientos en airfryer 200 °C unos 20 min.",
+    "Licuar con especias, pecanas, queso y algo de caldo.",
+    "Mezclar con el pollo y calentar."
+   ],
+   "storage": "Miércoles refrigerado; jueves congelado.",
+   "sources": [
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/recetario/22-recetas-saludables-para-aprovechar-al-maximo-airfryer"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "drumstick"
+  },
+  {
+   "id": "r-s4c",
+   "slug": "albondigas-ahumadas-pure-de-zapallo",
+   "category": "almuerzos",
+   "group": "",
+   "title": "Albóndigas ahumadas en airfryer + puré de zapallo",
+   "week": 4,
+   "slot": "Plato C",
+   "days": "Viernes",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "300 g de carne molida especial",
+    "2 cdas de avena, 1 huevo, ½ cebolla rallada, 1 diente de ajo",
+    "Salsa rápida: ½ envase de tomate triturado + ½ cdta de ahumada + comino y sal",
+    "Puré de zapallo asado, brócoli"
+   ],
+   "spices": "1 cdta de ahumada + ½ cdta de comino + sal. Puré: 1 pizca de canela y comino",
+   "steps": [
+    "Mezclar y formar 12 bolitas de ~25 g con las manos húmedas.",
+    "Rociar aceite; airfryer 190 °C por 10-12 min agitando a la mitad, hasta 71 °C.",
+    "Dar 5 min en la salsa rápida."
+   ],
+   "storage": "Congelado el domingo para el viernes. Recalentar tapadas 2 min, removiendo, hasta 74 °C.",
+   "sources": [
+    {
+     "name": "Los Andes: almuerzos de la semana (hamburguesas con puré de calabaza, lentejas con atún)",
+     "url": "https://www.losandes.com.ar/por-las-redes/que-comer-esta-semana-5-recetas-faciles-ricas-y-harina-tus-almuerzos-del-3-al-7-marzo-n5982522"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "pot"
+  },
+  {
+   "id": "r-c-s1-1",
+   "slug": "quesadilla-de-frejol-ahumado",
+   "category": "cenas",
+   "group": "",
+   "title": "Quesadilla de frejol ahumado",
+   "week": 1,
+   "slot": "Cena C1",
+   "days": "Lun, mié, vie",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "2 latas de frejol canario (o 250 g seco a presión)",
+    "Tortillas integrales",
+    "Mozzarella",
+    "Espinaca",
+    "Ensalada de lechuga y tomate"
+   ],
+   "spices": "1 cda de ahumada + ajo + limón en el frejol aplastado",
+   "steps": [
+    "Domingo: aplastar el frejol con la ahumada; porción del viernes al congelador.",
+    "Noche: rellenar tortilla con frejol, espinaca y queso.",
+    "Airfryer 180 °C, 5-6 min."
+   ],
+   "storage": "Frejol cocido 3-4 días refrigerado.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "tortilla"
+  },
+  {
+   "id": "r-c-s1-2",
+   "slug": "fideos-con-atun-y-espinaca",
+   "category": "cenas",
+   "group": "",
+   "title": "Fideos con atún y espinaca",
+   "week": 1,
+   "slot": "Cena C2",
+   "days": "Mar, jue",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Por noche (2 personas): 190 g de linguini o spaghetti integral",
+    "2 latas de atún en agua",
+    "½ cebolla (120 g), ajo, hojuelas de chile",
+    "180 g de salsa de tomate del domingo (½ envase de tomate triturado infusionado con ajo y orégano)",
+    "1 puñado de espinaca, perejil",
+    "60 ml del agua de la pasta"
+   ],
+   "spices": "Salsa: 1 cda de aceite de oliva con 2 ajos y orégano a fuego medio hasta dorar; retirar los ajos, agregar el tomate y espesar 15 min (técnica de su salsa para pizza)",
+   "steps": [
+    "Hervir la pasta al dente (10 min) y guardar 60 ml del agua.",
+    "Dorar la cebolla con ajo, chile, sal y pimienta.",
+    "Agregar el atún, la salsa, la espinaca y el agua; que hierva.",
+    "Unir con la pasta y terminar con perejil."
+   ],
+   "storage": "La salsa se hace el domingo (3-4 días refrigerada); la pasta, en la noche. Adaptación: pasta integral, espinaca y atún en agua.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Fideos con Atún",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7350430268722859270"
+    },
+    {
+     "name": "goodfoodpapi (TikTok): salsa de tomate infusionada para pizza",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7346351390211443974"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "pasta"
+  },
+  {
+   "id": "r-c-s2-1",
+   "slug": "sopa-de-pollo-al-kion",
+   "category": "cenas",
+   "group": "",
+   "title": "Sopa de pollo al kion",
+   "week": 2,
+   "slot": "Cena C1",
+   "days": "Lun, mié, vie",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Caldo de 400 g de pollo hervido con kion (2 L)",
+    "Verduras mixtas congeladas",
+    "Cabello de ángel"
+   ],
+   "spices": "Kion, cebolla china, pimienta",
+   "steps": [
+    "Calentar caldo con verduras y fideo 5 min.",
+    "Agregar el pollo deshilachado."
+   ],
+   "storage": "Caldo 3-4 días; porción del viernes congelada. La única cena con pollo del mes.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "pot"
+  },
+  {
+   "id": "r-c-s2-2",
+   "slug": "wrap-de-huevo-y-espinaca",
+   "category": "cenas",
+   "group": "",
+   "title": "Wrap de huevo y espinaca",
+   "week": 2,
+   "slot": "Cena C2",
+   "days": "Mar, jue",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Por persona: 1 tortilla integral (en lugar de la Rapidita XL)",
+    "1 huevo + 1 clara (el original usa 2 huevos)",
+    "1 puñado de espinaca",
+    "1 cda de salsa de tomate o tomate picado",
+    "Verduras congeladas salteadas, opcional"
+   ],
+   "spices": "Sal, pimienta, hojuelas de chile; 1 pizca de la mezcla ahumada en el huevo",
+   "steps": [
+    "Saltear la espinaca 1 min.",
+    "Agregar el huevo batido y revolver hasta que cuaje firme.",
+    "Calentar la tortilla, untar el tomate, rellenar y enrollar; 3 min en airfryer a 180 °C si se quiere crocante."
+   ],
+   "storage": "Al momento, 10 min. Tortillas del congelador (paquete de la quincenal 1).",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): 3 Recetas Rapiditas (Rapi-wrap de huevo y espinaca)",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7356350483847564550"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "egg"
+  },
+  {
+   "id": "r-c-s3-1",
+   "slug": "pita-shawarma-de-garbanzos",
+   "category": "cenas",
+   "group": "",
+   "title": "Pita shawarma de garbanzos crocantes",
+   "week": 3,
+   "slot": "Cena C1",
+   "days": "Lun, mié, vie",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "3 latas de garbanzo",
+    "Pan pita integral",
+    "Yogur con ajo y comino",
+    "Tomate, pepino, lechuga"
+   ],
+   "spices": "Ahumada + 1 cdta de curry de la casa",
+   "steps": [
+    "Domingo: garbanzos secos y sazonados, airfryer 200 °C 12-15 min.",
+    "Noche: reavivar 3-4 min en airfryer; armar la pita."
+   ],
+   "storage": "Garbanzos tostados 3-4 días refrigerados; porción del viernes congelada.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "beans"
+  },
+  {
+   "id": "r-c-s3-2",
+   "slug": "bowl-de-camote-y-atun",
+   "category": "cenas",
+   "group": "",
+   "title": "Bowl tibio de camote, atún y espinaca",
+   "week": 3,
+   "slot": "Cena C2",
+   "days": "Mar, jue",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Camote asado del domingo",
+    "4 latas de atún",
+    "Espinaca"
+   ],
+   "spices": "Vinagreta de comino y limón",
+   "steps": [
+    "Calentar el camote, mezclar con espinaca y atún.",
+    "Aliñar."
+   ],
+   "storage": "Camote cocido 3-4 días.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "taper"
+  },
+  {
+   "id": "r-c-s4-1",
+   "slug": "crema-de-zapallo-al-curry",
+   "category": "cenas",
+   "group": "",
+   "title": "Crema de zapallo asado al curry",
+   "week": 4,
+   "slot": "Cena C1",
+   "days": "Lun, mié, vie",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "1,2 kg de zapallo asado",
+    "Agua o caldo",
+    "Queso fresco",
+    "2 latas de garbanzo tostados en airfryer"
+   ],
+   "spices": "Curry de la casa",
+   "steps": [
+    "Licuar el zapallo con curry y líquido; hervir 5 min.",
+    "Servir con queso y garbanzos."
+   ],
+   "storage": "Cremas 3-4 días; porción del viernes congelada.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "pumpkin"
+  },
+  {
+   "id": "r-c-s4-2",
+   "slug": "sopita-a-la-minuta",
+   "category": "cenas",
+   "group": "",
+   "title": "Sopita a la minuta",
+   "week": 4,
+   "slot": "Cena C2",
+   "days": "Mar, jue",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "300 g de carne molida especial (el original usa 400 g)",
+    "1 tomate, 1 cebolla, 1 cda de ajo molido, orégano",
+    "½ envase de tomate triturado (en lugar de 150 g de salsa de tomate)",
+    "1,5 L de agua (en lugar de 2 L de caldo de res)",
+    "2 papas blancas en cubos (el original usa 3 blancas y 1 amarilla)",
+    "60 g de cabello de ángel (30 g por noche)",
+    "2 huevos (1 por noche)",
+    "1 puñado de verduras congeladas"
+   ],
+   "spices": "Orégano, 1 cdta de mezcla ahumada, pimienta",
+   "steps": [
+    "Domingo: dorar la carne a fuego alto, salpimentar y reservar.",
+    "Sudar cebolla y tomate con ajo y orégano; agregar el tomate triturado, el agua y la carne; hervir.",
+    "Agregar la papa y hervir 10 min. Dividir en 2 y congelar la del jueves (sin fideo).",
+    "Noche: hervir, agregar fideo y verduras 4 min y el huevo batido en hilo hasta que cuaje."
+   ],
+   "storage": "Base martes refrigerada; jueves congelada. Adaptación: menos carne y papa, sin caldo en cubo, verduras añadidas y fideo solo al servir.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Sopita a la Minuta",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7374561069596970246"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "pot"
+  },
+  {
+   "id": "r-d-huevos",
+   "slug": "huevos-revueltos-cremosos",
+   "category": "desayunos",
+   "group": "",
+   "title": "Huevos revueltos cremosos, pero firmes",
+   "week": null,
+   "slot": "Desayuno",
+   "days": "Lunes, martes, jueves y viernes, todas las semanas",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "2 huevos por persona",
+    "Sal, pimienta, cebolla china picada",
+    "1 cdta de aceite",
+    "Pan integral, ¼ de palta y 1 fruta"
+   ],
+   "spices": "1 pizca de la mezcla ahumada o de cúrcuma con pimienta",
+   "steps": [
+    "Calentar el aceite en sartén antiadherente hasta que humee apenas y retirar el exceso.",
+    "Bajar el fuego, verter los huevos bien batidos y revolver rápido.",
+    "Despegar los bordes y seguir hasta que no quede parte líquida.",
+    "Salpimentar y terminar con cebolla china."
+   ],
+   "storage": "Al momento, 5 min. Adaptación: goodfoodpapi apaga el fuego cuando empieza a cuajar y termina con el calor residual; aquí se cocina hasta que cuaje firme por la alerta de influenza aviar.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): huevos revueltos cremosos",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7353374687574904070"
+    },
+    {
+     "name": "Libero",
+     "url": "https://libero.pe/tiempoextra/2026/07/14/alerta-influenza-aviar-en-peru-se-puede-consumir-pollo-huevos-emergencia-sanitaria-h5n1-1320844"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "egg"
+  },
+  {
+   "id": "r-o-base",
+   "slug": "overnight-oats-base",
+   "category": "dulces",
+   "group": "Overnight oats",
+   "title": "Base de overnight oats (1 frasco)",
+   "week": null,
+   "slot": "Base de los frascos",
+   "days": "Todas las semanas",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "40 g de avena en hojuelas (no instantánea)",
+    "100 ml de leche",
+    "50 g de yogur griego natural",
+    "1 cdta de chía",
+    "1 pizca de sal",
+    "Máximo 1 cdta de miel"
+   ],
+   "spices": "Opcional: ½ cdta de dulce de canela",
+   "steps": [
+    "Mezclar todo en frasco de 300-400 ml.",
+    "Refrigerar mínimo 4 h, ideal 8-12.",
+    "Remover antes de comer."
+   ],
+   "storage": "3 días refrigerado. Para 6 frascos: 240 g avena, 600 ml leche, 300 g yogur, 2 cdas chía.",
+   "sources": [
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/ingredientes-y-alimentos/cinco-errores-comunes-que-cometemos-al-preparar-avena-nocturna-como-evitarlos"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "jar"
+  },
+  {
+   "id": "r-o-s1",
+   "slug": "overnight-oats-tiramisu",
+   "category": "dulces",
+   "group": "Overnight oats",
+   "title": "Tiramisú",
+   "week": 1,
+   "slot": "Frasco",
+   "days": "Dulce lun-mar, desayuno el miércoles",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Base",
+    "40 ml de café frío en lugar de 40 ml de leche",
+    "1 cdta de miel"
+   ],
+   "spices": "1 cdta de cacao tamizado sobre la capa de yogur; 3 g de chocolate rallado",
+   "steps": [
+    "Hacer la base con café.",
+    "Capa de yogur encima y cacao al servir."
+   ],
+   "storage": "3 días refrigerado.",
+   "sources": [
+    {
+     "name": "Country & Town House",
+     "url": "https://www.countryandtownhouse.com/food-and-drink/tiramisu-overnight-oats"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "jar"
+  },
+  {
+   "id": "r-o-s2",
+   "slug": "overnight-oats-cheesecake-de-fresa",
+   "category": "dulces",
+   "group": "Overnight oats",
+   "title": "Cheesecake de fresa",
+   "week": 2,
+   "slot": "Frasco",
+   "days": "Dulce lun-mar, desayuno el miércoles",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Base",
+    "15 g de queso crema batido con el yogur",
+    "Vainilla",
+    "½ cdta de miel"
+   ],
+   "spices": "2 cdas de mermelada de chía de fresa + 1 cda de granola triturada",
+   "steps": [
+    "Batir queso crema con yogur y vainilla.",
+    "Armar capas; mermelada y granola al servir."
+   ],
+   "storage": "3 días refrigerado.",
+   "sources": [
+    {
+     "name": "Eating Bird Food",
+     "url": "https://www.eatingbirdfood.com/cheesecake-overnight-oats/"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "jar"
+  },
+  {
+   "id": "r-o-s3",
+   "slug": "frasco-proteico-chocolate-y-mani",
+   "category": "dulces",
+   "group": "Overnight oats",
+   "title": "Frasco proteico de chocolate, maní y plátano",
+   "week": 3,
+   "slot": "Frasco",
+   "days": "Dulce lun-mar, desayuno el miércoles",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Base, con 100 g de yogur griego en lugar de 50 g (hace de quark)",
+    "1 cdta de cacao (en lugar de la bebida láctea proteica de chocolate)",
+    "10 g de mantequilla de maní (el original usa 15 g)",
+    "40 g de plátano en rodajas"
+   ],
+   "spices": "Canela; 3 g de chocolate 70% rallado. Sin barra proteica",
+   "steps": [
+    "Mezclar la base con el cacao y la mantequilla de maní.",
+    "Plátano encima al servir (o la noche anterior)."
+   ],
+   "storage": "3 días refrigerado. Adaptación: versión fría en frasco y sin productos proteicos industriales. Variante Snickers: ver la fuente de The Big Man's World.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (Threads): Bowl de avena con 40 g de prote",
+     "url": "https://www.threads.com/@goodfoodpapi/video/Dd7dVoPH_2-/video-bowl-de-avena-con-g-de-prote-sin-proteina-en-polvo-ingredientes-g-de-avena-con/"
+    },
+    {
+     "name": "The Big Man's World",
+     "url": "https://thebigmansworld.com/healthy-snickers-overnight-oats/"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "jar"
+  },
+  {
+   "id": "r-o-s4",
+   "slug": "overnight-oats-pie-de-manzana",
+   "category": "dulces",
+   "group": "Overnight oats",
+   "title": "Pie de manzana",
+   "week": 4,
+   "slot": "Frasco",
+   "days": "Dulce lun-mar, desayuno el miércoles",
+   "yield": "",
+   "replaces": "",
+   "ingredients": [
+    "Base",
+    "½ cdta de dulce de canela",
+    "50 g de manzana asada"
+   ],
+   "spices": "Manzana asada en airfryer (180 °C, 8-10 min) + 1 cda de granola + 3 g de pecanas",
+   "steps": [
+    "Asar la manzana en cubos.",
+    "Montar sobre la base al servir."
+   ],
+   "storage": "3 días refrigerado.",
+   "sources": [],
+   "goodfoodpapi": false,
+   "illus": "jar"
+  },
+  {
+   "id": "r-h-s1",
+   "slug": "queque-de-platano-y-avena",
+   "category": "dulces",
+   "group": "Horneados",
+   "title": "Queque de plátano y avena",
+   "week": 1,
+   "slot": "Horneado",
+   "days": "Dulce de miércoles a viernes",
+   "yield": "12 tajadas",
+   "replaces": "",
+   "ingredients": [
+    "3 plátanos maduros",
+    "200 ml de leche",
+    "250 g de avena licuada",
+    "2 huevos",
+    "80 ml de aceite",
+    "16 g de polvo de hornear",
+    "30 g de nueces"
+   ],
+   "spices": "1 cdta de dulce de canela",
+   "steps": [
+    "Licuar líquidos y plátano; unir con avena y polvo de hornear.",
+    "Molde de 20-22 cm, 180 °C por 45-60 min."
+   ],
+   "storage": "6 tajadas en la semana, 6 al congelador (2-3 meses). Sin azúcar añadida.",
+   "sources": [
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/postres/bizcocho-azucar-avena-platano-receta-para-desayunar-algo-dulce-remordimientos"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "banana"
+  },
+  {
+   "id": "r-h-s2",
+   "slug": "galletas-de-avena-y-platano",
+   "category": "dulces",
+   "group": "Horneados",
+   "title": "Galletas de avena y plátano",
+   "week": 2,
+   "slot": "Horneado",
+   "days": "Dulce de miércoles a viernes",
+   "yield": "6 grandes",
+   "replaces": "",
+   "ingredients": [
+    "2 plátanos maduros",
+    "250 g de avena",
+    "10 g de linaza",
+    "10 g de pepitas"
+   ],
+   "spices": "Canela",
+   "steps": [
+    "Aplastar plátano y mezclar todo.",
+    "180 °C por 20 min + 5 min con el horno apagado."
+   ],
+   "storage": "3-5 días. Variante: brownie baked oats, 180 °C 20-25 min.",
+   "sources": [
+    {
+     "name": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/postres/galletas-avena-platano-receta-vegana-expres-dos-ingredientes"
+    },
+    {
+     "name": "¡HOLA!",
+     "url": "https://www.hola.com/cocina/noticias/20210907195599/baked-oats-receta-viral-avena-paso-a-paso/"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "cookie"
+  },
+  {
+   "id": "r-h-s3",
+   "slug": "brownie-de-camote",
+   "category": "dulces",
+   "group": "Horneados",
+   "title": "Brownie de camote",
+   "week": 3,
+   "slot": "Horneado",
+   "days": "Dulce de miércoles a viernes",
+   "yield": "12 cuadrados",
+   "replaces": "",
+   "ingredients": [
+    "500 g de camote en puré",
+    "3 cdas de cacao",
+    "2 huevos",
+    "Vainilla",
+    "½ cdta de polvo de hornear",
+    "3-4 cdas de miel",
+    "20 g de chocolate 70%"
+   ],
+   "spices": "1 pizca de canela, sal",
+   "steps": [
+    "Mezclar todo.",
+    "Molde de 20 cm, 180 °C por 25-30 min."
+   ],
+   "storage": "6 cuadrados en la semana, 6 al congelador.",
+   "sources": [
+    {
+     "name": "Aire de Santa Fe",
+     "url": "https://www.airedesantafe.com.ar/c624066"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "cookie"
+  },
+  {
+   "id": "r-h-s4",
+   "slug": "energy-balls-de-avena-y-mani",
+   "category": "dulces",
+   "group": "Horneados",
+   "title": "Energy balls de avena y maní",
+   "week": 4,
+   "slot": "Horneado",
+   "days": "Dulce de miércoles a viernes",
+   "yield": "20 bolitas, sin horno",
+   "replaces": "",
+   "ingredients": [
+    "115 g de mantequilla de maní",
+    "80 g de avena",
+    "60 g de crema de dátiles o miel",
+    "15 g de coco",
+    "30 g de pasas",
+    "1 cda de linaza",
+    "1 cda de chía"
+   ],
+   "spices": "Canela",
+   "steps": [
+    "Mezclar y formar 20 bolitas.",
+    "Refrigerar."
+   ],
+   "storage": "Algo más de 1 semana refrigeradas; ~3 meses congeladas. Porción: 2 bolitas.",
+   "sources": [
+    {
+     "name": "Vitónica",
+     "url": "https://www.vitonica.com/recetas-saludables/energy-balls-bolitas-energeticas-avena-mantequilla-cacahuete-datiles-coco-receta-snack-saludable"
+    }
+   ],
+   "goodfoodpapi": false,
+   "illus": "cookie"
+  },
+  {
+   "id": "r-g-pancakes",
+   "slug": "pancakes-de-avena-y-yogur",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Pancakes de avena y yogur con salsa de fresa",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el desayuno de huevo de un día o el frasco del miércoles",
+   "ingredients": [
+    "Por persona: 1 huevo, 60 g de yogur griego (en lugar de skyr), 60 ml de leche, 45 g de avena, ½ cdta de polvo de hornear",
+    "Salsa: 150 g de fresa congelada, jugo de ½ limón, 1 cdta de maicena, ½ cdta de miel (en lugar de edulcorante)"
+   ],
+   "spices": "Canela",
+   "steps": [
+    "Licuar la masa y reposar 5 min.",
+    "Cocinar en sartén antiadherente a fuego bajo, 2 min por lado.",
+    "Salsa: fresa, limón y miel 5 min al fuego; espesar con la maicena disuelta."
+   ],
+   "storage": "Masa y pancakes cocidos 2 días refrigerados; recalentar 30 s. Adaptación: sin tocino ni huevo frito aparte.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Pancakes, huevos y tocino, 45 g de prote",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7350025937716530437"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "pan"
+  },
+  {
+   "id": "r-g-koreano",
+   "slug": "sandwich-coreano-de-huevo",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Sándwich coreano de huevo, versión ligera",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el desayuno de huevo de un día",
+   "ingredients": [
+    "Por persona: 2 tajadas de pan integral",
+    "2 huevos batidos con 1 cda de leche",
+    "30 g de queso fresco (en lugar de edam y jamón)",
+    "Salsa: 1 cda de mayo light + ½ cdta de sriracha + 1 gota de miel (en lugar de leche condensada)"
+   ],
+   "spices": "Ajo en polvo y perejil sobre el pan",
+   "steps": [
+    "Tostar el pan en airfryer 3 min a 180 °C con rociador, sin mantequilla.",
+    "Revolver el huevo hasta que cuaje firme.",
+    "Armar con queso y la salsa."
+   ],
+   "storage": "Al momento. Adaptación grande: el original lleva 40 g de mantequilla, leche condensada, pan blanco y jamón o bondiola (embutido, fuera de este plan).",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Sándwich coreano de huevo",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7523011396104178950"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "bread"
+  },
+  {
+   "id": "r-g-alfajor",
+   "slug": "alfajor-proteico-de-avena-y-mani",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Alfajor proteico de avena y maní",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el horneado de cualquier semana (por ejemplo, las energy balls de la S4)",
+   "ingredients": [
+    "Tapitas: 180 g de harina de avena (avena licuada), 150 ml de leche, 30 g de mantequilla de maní, 1 cdta de polvo de hornear, 1 cdta de vainilla",
+    "Relleno: 120 g de mantequilla de maní, 60 g de leche en polvo, 1½ scoop de proteína en polvo de vainilla, 160 ml de leche"
+   ],
+   "spices": "Canela en las tapitas",
+   "steps": [
+    "Mezclar el relleno hasta que quede cremoso y refrigerar.",
+    "Mezclar las tapitas, formar discos finos y hornear o pasar por airfryer a 170 °C, 8-10 min.",
+    "Enfriar y rellenar."
+   ],
+   "storage": "3-5 días refrigerado; congelable. Si no hay proteína en polvo, se omite y se sube la leche en polvo. Porción: 1 alfajor.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Alfajor FitMonster",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7515574751885102341"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "cookie"
+  },
+  {
+   "id": "r-g-helado",
+   "slug": "helado-de-yogur-y-galleta",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Helado cremoso de yogur y galleta",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el dulce del lunes o el martes, si se come en casa",
+   "ingredients": [
+    "500 g de yogur griego natural (en lugar de skyr o quark)",
+    "100 ml de leche descremada",
+    "2 galletas de chocolate trituradas (el original usa 6 Biscolata)",
+    "1 cdta de cacao y 1 cdta de miel (en lugar de sirope sin azúcar, edulcorante y chantilly en polvo)"
+   ],
+   "spices": "Vainilla",
+   "steps": [
+    "Yogur y leche al congelador 20 min, hasta que empiecen a cristalizar.",
+    "Batir sobre un bowl con hielo unos minutos con el cacao y la miel.",
+    "Mezclar las galletas y servir, o congelar en 4 frasquitos."
+   ],
+   "storage": "Rinde 4 porciones; congelado 1 mes. No viaja a la oficina. Adaptación: sin chantilly en polvo y con menos galleta.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): McFlurry Biscolata fit con 20 g de proteína",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7331079972443933958"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "jar"
+  },
+  {
+   "id": "r-g-pure",
+   "slug": "pure-de-papa-amarilla-ligero",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Puré de papa amarilla, versión ligera",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el puré de zapallo de la S4 (Plato C) o el camote de la S3",
+   "ingredients": [
+    "600 g de papa amarilla + 300 g de papa blanca",
+    "250 ml de leche descremada (el original usa 400 ml de leche entera)",
+    "15 g de mantequilla (el original usa 100 g)",
+    "1 cda de parmesano",
+    "Romero, nuez moscada, pimienta y sal"
+   ],
+   "spices": "Nuez moscada y romero",
+   "steps": [
+    "Sancochar las papas con sal.",
+    "Calentar la leche con el romero.",
+    "Prensar las papas y unir con la leche, la mantequilla y el parmesano."
+   ],
+   "storage": "3-4 días refrigerado; se congela aceptablemente. Recalentar con 1 cda de leche.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): El mejor puré de tu vida",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7366022945103301894"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "bowl"
+  },
+  {
+   "id": "r-g-atun-almuerzo",
+   "slug": "fideos-con-atun-plato-c",
+   "category": "goodfoodpapi",
+   "group": "",
+   "title": "Fideos con atún como Plato C de emergencia",
+   "week": null,
+   "slot": "Alternativa",
+   "days": "",
+   "yield": "",
+   "replaces": "el Plato C (viernes) de cualquier semana, si falta tiempo",
+   "ingredients": [
+    "2 porciones: 190 g de pasta integral, 2 latas de atún en agua, 180 g de salsa de tomate, ½ cebolla, ajo, chile",
+    "Verduras congeladas, 1 tz"
+   ],
+   "spices": "Hojuelas de chile, perejil",
+   "steps": [
+    "Igual que la cena C2 de la S1.",
+    "Porcionar y congelar el domingo."
+   ],
+   "storage": "Congelado para el viernes; recalentar con 1 cda de agua. Pescado en conserva: no rompe la regla de pescado fresco solo lunes y martes.",
+   "sources": [
+    {
+     "name": "Adaptada de goodfoodpapi (TikTok): Fideos con Atún",
+     "url": "https://www.tiktok.com/@goodfoodpapi/video/7350430268722859270"
+    }
+   ],
+   "goodfoodpapi": true,
+   "illus": "pasta"
+  }
+ ],
+ "pantry": {
+  "musthave": [
+   {
+    "name": "Despensa",
+    "items": [
+     {
+      "id": "mh-0",
+      "text": "Avena, arroz integral, quinua, lentejas"
+     },
+     {
+      "id": "mh-1",
+      "text": "Las 4 mezclas de especias, al menos a la mitad"
+     },
+     {
+      "id": "mh-2",
+      "text": "Chía, cacao, coco, miel, granola casera"
+     },
+     {
+      "id": "mh-3",
+      "text": "Atún en agua (2 latas de reserva), garbanzo, frejol, tomate triturado"
+     },
+     {
+      "id": "mh-4",
+      "text": "Mantequilla de maní, chocolate 70%, frutos secos"
+     },
+     {
+      "id": "mh-5",
+      "text": "Aceite y rociador, sillao, vinagre"
+     },
+     {
+      "id": "mh-6",
+      "text": "Cebolla, ajo, camote ventilados; plátano y cítricos a temperatura ambiente"
+     }
+    ]
+   },
+   {
+    "name": "Refrigerador",
+    "items": [
+     {
+      "id": "mh-7",
+      "text": "Huevos al fondo; yogur griego, leche, queso fresco"
+     },
+     {
+      "id": "mh-8",
+      "text": "Carne cruda abajo, en táper cerrado, solo hasta el domingo"
+     },
+     {
+      "id": "mh-9",
+      "text": "Frascos de la semana y mermelada de chía"
+     },
+     {
+      "id": "mh-10",
+      "text": "Táperes del lunes al miércoles y base de cenas"
+     },
+     {
+      "id": "mh-11",
+      "text": "Frutos secos (por el calor)"
+     }
+    ]
+   },
+   {
+    "name": "Congelador",
+    "items": [
+     {
+      "id": "mh-12",
+      "text": "Táperes del jueves y el viernes, y la cena del viernes (o del jueves si lleva carne molida)"
+     },
+     {
+      "id": "mh-13",
+      "text": "Verduras mixtas, fresa y mango congelados"
+     },
+     {
+      "id": "mh-14",
+      "text": "Tortillas, pan pita, la mitad del pan de molde"
+     },
+     {
+      "id": "mh-15",
+      "text": "Reserva de queque, brownie, energy balls o clusters"
+     }
+    ]
+   }
+  ],
+  "monthly": [
+   {
+    "name": "Granos y harinas",
+    "items": [
+     {
+      "id": "dm-0",
+      "text": "Avena en hojuelas, 2 kg"
+     },
+     {
+      "id": "dm-1",
+      "text": "Arroz integral, 2 kg"
+     },
+     {
+      "id": "dm-2",
+      "text": "Quinua, 1 kg"
+     },
+     {
+      "id": "dm-3",
+      "text": "Lentejas, 1 kg"
+     },
+     {
+      "id": "dm-4",
+      "text": "Fideo cabello de ángel, 250 g (sopas S2 y S4)"
+     },
+     {
+      "id": "dm-5",
+      "text": "Harina, maicena, polvo de hornear"
+     },
+     {
+      "id": "dm-6",
+      "text": "Panko o pan rallado, 2 bolsas"
+     }
+    ]
+   },
+   {
+    "name": "Especias",
+    "items": [
+     {
+      "id": "dm-7",
+      "text": "Pimentón ahumado y pimentón dulce"
+     },
+     {
+      "id": "dm-8",
+      "text": "Comino, orégano, ajo en polvo, cebolla en polvo"
+     },
+     {
+      "id": "dm-9",
+      "text": "Curry en polvo, cúrcuma, jengibre en polvo"
+     },
+     {
+      "id": "dm-10",
+      "text": "Hierbas provenzales, hojuelas de chile, nuez moscada, clavo molido"
+     },
+     {
+      "id": "dm-11",
+      "text": "Canela molida (2 sobres), pimienta negra, laurel, sal"
+     },
+     {
+      "id": "dm-12",
+      "text": "Opcional: garam masala, cinco especias"
+     },
+     {
+      "id": "dm-13",
+      "text": "4 frascos chicos de vidrio con tapa (si no hay)"
+     }
+    ]
+   },
+   {
+    "name": "Semillas, frutos secos y dulce",
+    "items": [
+     {
+      "id": "dm-14",
+      "text": "Chía, 200 g; linaza molida, 100 g"
+     },
+     {
+      "id": "dm-15",
+      "text": "Coco rallado sin azúcar, 100 g"
+     },
+     {
+      "id": "dm-16",
+      "text": "Pecanas o nueces, 200 g; maní sin sal, 150 g"
+     },
+     {
+      "id": "dm-17",
+      "text": "Pasas o dátiles, 150 g"
+     },
+     {
+      "id": "dm-18",
+      "text": "Miel o panela, 250 g"
+     },
+     {
+      "id": "dm-19",
+      "text": "Cacao sin azúcar, 200 g; esencia de vainilla"
+     },
+     {
+      "id": "dm-20",
+      "text": "Café instantáneo, 1 frasco chico (si no hay)"
+     }
+    ]
+   },
+   {
+    "name": "Conservas",
+    "items": [
+     {
+      "id": "dm-21",
+      "text": "Atún en agua, 8 latas (cenas S1 y S3)"
+     },
+     {
+      "id": "dm-22",
+      "text": "Garbanzo en lata, 5 (3 en S3, 2 en S4)"
+     },
+     {
+      "id": "dm-23",
+      "text": "Frejol canario en lata, 2 (cenas S1)"
+     },
+     {
+      "id": "dm-24",
+      "text": "Tomate triturado, 4 envases de 400 g (salsa madre y fideos S1; albóndigas y sopa S4)"
+     },
+     {
+      "id": "dm-25",
+      "text": "Leche evaporada light, 2 latas"
+     },
+     {
+      "id": "dm-26",
+      "text": "Pimiento asado en frasco, 1"
+     }
+    ]
+   },
+   {
+    "name": "Aceites y salsas",
+    "items": [
+     {
+      "id": "dm-27",
+      "text": "Aceite vegetal 1 L, aceite de oliva 500 ml, rociador"
+     },
+     {
+      "id": "dm-28",
+      "text": "Sillao bajo en sodio, salsa de ostión, aceite de ajonjolí, ajonjolí, mostaza, vinagre de vino"
+     }
+    ]
+   },
+   {
+    "name": "Congelados",
+    "items": [
+     {
+      "id": "dm-29",
+      "text": "Verduras mixtas congeladas, 2 bolsas de 1 kg"
+     },
+     {
+      "id": "dm-30",
+      "text": "Fresa congelada, 1 kg; mango congelado, 500 g (opcional)"
+     }
+    ]
+   },
+   {
+    "name": "Otros",
+    "items": [
+     {
+      "id": "dm-31",
+      "text": "Bolsas zip, papel absorbente, papel film, papel de hornear"
+     },
+     {
+      "id": "dm-32",
+      "text": "Termómetro de cocina de pincho (una sola vez)"
+     },
+     {
+      "id": "dm-33",
+      "text": "Si faltan: 6 frascos de 300-400 ml, molde de queque y molde cuadrado de 20 cm"
+     }
+    ]
+   }
+  ],
+  "frequency": [
+   {
+    "when": "Semanal (sábado)",
+    "what": "Pollo, res, cerdo, pescado, huevos, verduras, fruta, lácteos"
+   },
+   {
+    "when": "Miércoles",
+    "what": "Lechuga, palta, plátano, tomate"
+   },
+   {
+    "when": "Quincenal (S1 y S3)",
+    "what": "Tortillas, pan pita, mantequilla de maní, chocolate 70%"
+   },
+   {
+    "when": "Mensual (S1)",
+    "what": "Granos, avena, semillas, conservas, aceites, especias y mezclas"
+   }
+  ],
+  "blends": [
+   {
+    "name": "Ahumada",
+    "recipe": "4 cdas pimentón ahumado, 2 pimentón dulce, 2 ajo en polvo, 2 cebolla en polvo, 1 comino, 1 orégano, 1 cdta pimienta, 1 cdta hojuelas de chile",
+    "use": "Pollo a la olla, chuleta de cerdo, albóndigas, sopita a la minuta, quesadillas de frejol, gajos de camote, pescado, garbanzos tostados"
+   },
+   {
+    "name": "Mediterránea",
+    "recipe": "3 cdas hierbas provenzales, 2 orégano, 1 ajo en polvo, 1 pimentón dulce, 1 cdta hojuelas de chile, 1 cdta pimienta",
+    "use": "Empanizado de milanesa y pescado, pollo cremoso, chimichurri, vinagretas, salsa madre"
+   },
+   {
+    "name": "Curry de la casa",
+    "recipe": "2 cdas curry en polvo, 1 cúrcuma, 1 comino, 1 jengibre en polvo, 1 garam masala (opcional; si no hay, +1 curry y ½ cdta canela), 1 cdta pimienta",
+    "use": "Lentejas, shawarma de garbanzos, crema de zapallo, crema de pimiento, salsa de maní"
+   },
+   {
+    "name": "Dulce de canela",
+    "recipe": "4 cdas canela, 1 jengibre en polvo, 1 cdta nuez moscada, ½ cdta clavo molido",
+    "use": "Overnight oats, granola, queque, manzana asada, camote"
+   }
+  ],
+  "blendsNote": "Una vez al mes (Semana 1, domingo, 10 min), en frascos de vidrio, sin sal. Uso: 1 cdta por porción o 1 cda por 500 g, con limón o vinagre.",
+  "fiveSpiceSub": "Sustituto de cinco especias: ½ cdta de canela, 1 pizca de clavo, ½ cdta de pimienta y 1 cdta de kion rallado.",
+  "toppings": [
+   {
+    "name": "Granola casera",
+    "qty": "1 tanda (~300 g)",
+    "use": "200 g avena + 40 g frutos secos + 20 g coco + 2 cdas miel + 1 cda aceite + mezcla dulce. Airfryer 160 °C, 8-10 min, removiendo cada 3"
+   },
+   {
+    "name": "Cacao sin azúcar",
+    "qty": "150-200 g",
+    "use": "Tiramisú, frasco proteico, brownie"
+   },
+   {
+    "name": "Coco rallado sin azúcar",
+    "qty": "100 g",
+    "use": "Granola, energy balls, variante mango-coco"
+   },
+   {
+    "name": "Mantequilla de maní 100%",
+    "qty": "1 pote quincenal",
+    "use": "Frasco proteico, salsa de maní, energy balls"
+   },
+   {
+    "name": "Chía",
+    "qty": "200 g",
+    "use": "1 cdta por frasco; mermelada"
+   },
+   {
+    "name": "Frutos secos",
+    "qty": "300 g",
+    "use": "5 g por frasco; refrigerados por el calor"
+   },
+   {
+    "name": "Mermelada de chía sin azúcar",
+    "qty": "1 frasco semanal",
+    "use": "300 g de fresa congelada + 1 cdta miel, 5 min al fuego, + 2 cdas chía; 5-7 días refrigerada"
+   },
+   {
+    "name": "Fruta congelada (fresa, mango)",
+    "qty": "1 kg",
+    "use": "Cheesecake, mermelada, clusters"
+   },
+   {
+    "name": "Chocolate 70%",
+    "qty": "1 tableta quincenal",
+    "use": "Rallado, 5 g por frasco"
+   },
+   {
+    "name": "Café instantáneo o pasado",
+    "qty": "—",
+    "use": "Tiramisú"
+   }
+  ],
+  "toppingsExtra": [
+   "Comodín congelado: clusters de fresa y yogur con 5 g de chocolate.",
+   "Variante mango-coco: 50 g de mango + 1 cdta de coco + ralladura de limón."
+  ],
+  "storage": [
+   {
+    "item": "Huevos con cáscara",
+    "fridge": "3-5 semanas",
+    "freezer": "No",
+    "pantry": "En verano, refrigerar"
+   },
+   {
+    "item": "Huevos duros",
+    "fridge": "1 semana",
+    "freezer": "No",
+    "pantry": "—"
+   },
+   {
+    "item": "Pollo crudo",
+    "fridge": "1-2 días",
+    "freezer": "9 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Carne molida cruda (res o cerdo)",
+    "fridge": "1-2 días",
+    "freezer": "3-4 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Bistec, chuletas, lomo crudos (res o cerdo)",
+    "fridge": "3-5 días",
+    "freezer": "4-12 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Pescado magro crudo",
+    "fridge": "1-3 días",
+    "freezer": "4-8 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Langostinos",
+    "fridge": "3-5 días",
+    "freezer": "6-18 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Comida cocinada con pollo, carne o pescado",
+    "fridge": "3-4 días",
+    "freezer": "2-6 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Sopas, cremas y guisos",
+    "fridge": "3-4 días",
+    "freezer": "2-3 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Overnight oats",
+    "fridge": "3 días (mejor 1-3)",
+    "freezer": "No",
+    "pantry": "—"
+   },
+   {
+    "item": "Mermelada de chía",
+    "fridge": "5-7 días",
+    "freezer": "3 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Chimichurri",
+    "fridge": "1 semana",
+    "freezer": "—",
+    "pantry": "—"
+   },
+   {
+    "item": "Mayo fit acevichada",
+    "fridge": "3 días (solo lun-mar)",
+    "freezer": "No",
+    "pantry": "—"
+   },
+   {
+    "item": "Clusters de yogur",
+    "fridge": "1 semana",
+    "freezer": "1 mes",
+    "pantry": "—"
+   },
+   {
+    "item": "Energy balls",
+    "fridge": "Algo más de 1 semana",
+    "freezer": "~3 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Queque, brownie, galletas",
+    "fridge": "3-5 días",
+    "freezer": "2-3 meses",
+    "pantry": "—"
+   },
+   {
+    "item": "Granola casera",
+    "fridge": "—",
+    "freezer": "—",
+    "pantry": "2-3 semanas, hermética"
+   },
+   {
+    "item": "Mezclas de especias",
+    "fridge": "—",
+    "freezer": "—",
+    "pantry": "3-6 meses"
+   },
+   {
+    "item": "Lechuga, brócoli, berries, uva",
+    "fridge": "1-3 días",
+    "freezer": "—",
+    "pantry": "—"
+   },
+   {
+    "item": "Palta madura",
+    "fridge": "1-3 días",
+    "freezer": "—",
+    "pantry": "Madurar fuera"
+   }
+  ],
+  "storageTips": [
+   "Enfriar en bandejas poco profundas y llevar al frío en menos de 2 h (1 h si hace más de 32 °C).",
+   "Arroz y quinua al frío en menos de 1 h; se recalientan una sola vez.",
+   "Lunes a miércoles refrigerado; jueves y viernes congelado el mismo domingo. Pescado y mariscos solo lunes y martes."
+  ],
+  "temps": [
+   {
+    "what": "Res y cerdo enteros",
+    "temp": "63 °C + 3 min de reposo"
+   },
+   {
+    "what": "Carne molida",
+    "temp": "71 °C"
+   },
+   {
+    "what": "Pollo",
+    "temp": "74 °C"
+   },
+   {
+    "what": "Recalentado",
+    "temp": "74 °C"
+   }
+  ],
+  "cuts": [
+   {
+    "cut": "Bistec de tapa (o cadera)",
+    "for": "Milanesa S1, tiras S2",
+    "how": "Mercado: \"bistec de tapa delgado, para milanesa\" o \"en tiritas para saltado\". Metro o Tottus: bandeja de bistec"
+   },
+   {
+    "cut": "Lomo fino (ocasional)",
+    "for": "Reemplazo de las tiras de la S2",
+    "how": "Metro o Tottus"
+   },
+   {
+    "cut": "Carne molida especial",
+    "for": "Empanadas S3, albóndigas y sopita a la minuta S4",
+    "how": "Mercado: que la muelan en el momento, de tapa o cadera, sin grasa visible"
+   },
+   {
+    "cut": "Lomo de cerdo",
+    "for": "Cerdo crispy S2",
+    "how": "Mercado o Metro/Tottus; pedir sin la capa de grasa exterior"
+   },
+   {
+    "cut": "Chuleta de cerdo deshuesada",
+    "for": "Chuleta ahumada S3",
+    "how": "Metro o Tottus en bandeja; en el mercado, chuleta de lomo"
+   },
+   {
+    "cut": "Bondiola (ocasional)",
+    "for": "Alternativa más jugosa del cerdo, con más grasa",
+    "how": "Metro o Tottus; como cambio, no como norma"
+   }
+  ]
+ },
+ "breakfast": "2 huevos revueltos o duros + 1 o 2 tajadas de pan integral + ¼ de palta + 1 fruta, lunes, martes, jueves y viernes. El miércoles, el frasco de la semana + 1 fruta."
+}

@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Illus from '../components/Illus.astro';
+import { base } from '../lib/plan';
+---
+<Base title="Página no encontrada">
+  <section class="wrap hero">
+    <Illus name="taper" size={96} />
+    <h1 style="margin-top:12px">Este táper está vacío.</h1>
+    <p class="lede">La página no existe. Vuelve al inicio o busca en las recetas.</p>
+    <p class="hero-actions"><a class="btn dark" href={base('/')}>Ir al inicio</a><a class="btn" href={base('/recetas/')}>Ver recetas</a></p>
+  </section>
+</Base>

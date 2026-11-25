@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro';
+import Illus from '../../components/Illus.astro';
+import { plan, CAT_TONE, toneStyle, base } from '../../lib/plan';
+
+const order = plan.categories.map((c) => c.id);
+const recipes = [...plan.recipes].sort(
+  (a, b) => order.indexOf(a.category) - order.indexOf(b.category) || (a.week ?? 9) - (b.week ?? 9)
+);
+const counts = Object.fromEntries(order.map((id) => [id, recipes.filter((r) => r.category === id).length]));
+---
+<Base title="Recetas" active="recetas" description="Todas las recetas del plan: almuerzos, cenas, desayunos, dulces y alternativas de goodfoodpapi.">
+  <section class="wrap hero">
+    <h1>Recetas</h1>
+    <p class="lede">{recipes.length} recetas del plan, con sazón, pasos y cómo guardarlas.</p>
+    <div class="filters" role="group" aria-label="Filtrar por categoría">
+      <button type="button" data-filter="todas" aria-pressed="true">Todas<span class="count">{recipes.length}</span></button>
+      {plan.categories.map((c) => (
+        <button type="button" data-filter={c.id} aria-pressed="false">{c.label}<span class="count">{counts[c.id]}</span></button>
+      ))}
+    </div>
+    <p class="muted small" id="filter-status" aria-live="polite"></p>
+
+    <ul class="grid" id="recipe-grid">
+      {recipes.map((r) => (
+        <li data-cat={r.category}>
+          <a class="rcard sticker lift" href={base(`/recetas/${r.slug}/`)} style={toneStyle(CAT_TONE[r.category])}>
+            <div class="art">
+              <Illus name={r.illus} size={88} />
+              {r.goodfoodpapi && <span class="gfp">goodfoodpapi</span>}
+            </div>
+            <div class="body">
+              <h3>{r.title}</h3>
+              <div class="meta">
+                {r.week && <span class="chip">Semana {r.week}</span>}
+                {r.slot && <span class="chip">{r.slot}</span>}
+                {r.group && <span class="chip">{r.group}</span>}
+              </div>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <script is:inline>
+    (function () {
+      var btns = document.querySelectorAll('[data-filter]');
+      var items = document.querySelectorAll('#recipe-grid > li');
+      var status = document.getElementById('filter-status');
+      function apply(cat) {
+        var shown = 0;
+        Array.prototype.forEach.call(items, function (li) {
+          var ok = cat === 'todas' || li.getAttribute('data-cat') === cat;
+          li.hidden = !ok;
+          if (ok) shown++;
+        });
+        Array.prototype.forEach.call(btns, function (b) {
+          b.setAttribute('aria-pressed', b.getAttribute('data-filter') === cat ? 'true' : 'false');
+        });
+        if (status) status.textContent = cat === 'todas' ? '' : shown + ' recetas en esta categoría';
+      }
+      Array.prototype.forEach.call(btns, function (b) {
+        b.addEventListener('click', function () {
+          var cat = b.getAttribute('data-filter');
+          apply(cat);
+          try { history.replaceState(null, '', cat === 'todas' ? location.pathname : '#' + cat); } catch (e) {}
+        });
+      });
+      var h = (location.hash || '').slice(1);
+      if (h && document.querySelector('[data-filter="' + h + '"]')) apply(h);
+    })();
+  </script>
+</Base>

@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import Illus from '../../components/Illus.astro';
+import Icon from '../../components/Icon.astro';
+import PrintButton from '../../components/PrintButton.astro';
+import { plan, CAT_TONE, toneStyle, catLabel, base, type Recipe } from '../../lib/plan';
+
+export function getStaticPaths() {
+  return plan.recipes.map((r) => ({ params: { slug: r.slug }, props: { recipe: r } }));
+}
+interface Props { recipe: Recipe }
+const { recipe: r } = Astro.props;
+const tone = CAT_TONE[r.category];
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+---
+<Base title={r.title} active="recetas" description={`${r.title}: ingredientes, especias, pasos y conservación.`}>
+  <div style={toneStyle(tone)}>
+    <section class="rhero">
+      <div class="wrap rhero-in">
+        <div class="art"><Illus name={r.illus} size={124} /></div>
+        <div>
+          <p><a class="chip" href={base(`/recetas/#${r.category}`)}>{catLabel(r.category)}</a></p>
+          <h1>{r.title}</h1>
+          <div class="badges">
+            {r.week && <a class="tag" href={base(`/semana/${r.week}/`)} style="color:var(--crema)">Semana {r.week}</a>}
+            {r.slot && <span class="chip">{r.slot}</span>}
+            {r.days && <span class="chip">{r.days}</span>}
+            {r.yield && <span class="chip">{cap(r.yield)}</span>}
+            {r.goodfoodpapi && <span class="gfp">goodfoodpapi</span>}
+          </div>
+          {r.replaces && <p class="replaces"><span>Reemplaza: {r.replaces}</span></p>}
+          <div class="hero-actions" style="margin-top:18px"><PrintButton /></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="rbody">
+        <div>
+          <section class="panel" aria-labelledby="h-ing">
+            <h2 id="h-ing">Ingredientes</h2>
+            <ul class="ing">{r.ingredients.map((x) => <li>{x}</li>)}</ul>
+            <div class="spice">
+              <h3><Illus name="spicejar" size={34} />Especias</h3>
+              <p>{r.spices}</p>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section class="panel" aria-labelledby="h-pasos">
+            <h2 id="h-pasos">Pasos</h2>
+            <ol class="steps">{r.steps.map((x) => <li><p>{x}</p></li>)}</ol>
+            <div class="keep">
+              <h3><Icon name="snow" size={24} />Conservación</h3>
+              <p>{r.storage}</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="sources panel" aria-labelledby="h-src">
+        <h2 id="h-src" style="font-size:1.7rem">Receta original / inspiración</h2>
+        {r.sources.length > 0 ? (
+          <ul>
+            {r.sources.map((s) => (
+              <li><Icon name="link" size={18} /> <a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a></li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted" style="margin-top:8px">Receta de la casa, sin fuente externa.</p>
+        )}
+      </section>
+    </div>
+  </div>
+</Base>

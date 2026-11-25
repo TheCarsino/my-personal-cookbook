@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import Checklist from '../components/Checklist.astro';
+import Illus from '../components/Illus.astro';
+import { plan, toneStyle, WEEK_TONE, CAT_TONE } from '../lib/plan';
+
+const p = plan.pantry;
+const blendTone = [WEEK_TONE[1], WEEK_TONE[3], WEEK_TONE[2], CAT_TONE.dulces];
+const blendIllus = ['chili', 'leaf', 'spicejar', 'cookie'];
+const mhIcons: Record<string, string> = { Despensa: 'jar', Refrigerador: 'snow', Congelador: 'snow' };
+---
+<Base title="Despensa" active="despensa" description="Imprescindibles, compra mensual, mezclas de especias, toppings y cuánto dura cada cosa.">
+  <section class="wrap hero">
+    <h1>Despensa</h1>
+    <p class="lede">Lo que siempre debe haber, la compra grande del mes y las cuatro mezclas que dan el sabor.</p>
+    <ul class="toc">
+      <li><a class="chip" href="#imprescindibles">Imprescindibles</a></li>
+      <li><a class="chip" href="#compra-mensual">Compra mensual</a></li>
+      <li><a class="chip" href="#mezclas">Mezclas de especias</a></li>
+      <li><a class="chip" href="#toppings">Toppings</a></li>
+      <li><a class="chip" href="#duracion">Cuánto dura</a></li>
+    </ul>
+  </section>
+
+  <div class="wrap">
+    <div class="section" id="imprescindibles" style={toneStyle(WEEK_TONE[3])}>
+      <Checklist
+        listKey="imprescindibles"
+        title="Imprescindibles"
+        headingId="h-mh"
+        stores={p.musthave.map((g) => ({ title: g.name, icon: mhIcons[g.name], sections: [{ items: g.items }] }))}
+      />
+    </div>
+
+    <div class="section" id="compra-mensual" style={toneStyle(WEEK_TONE[2])}>
+      <Checklist
+        listKey="compra-mensual"
+        title="Compra mensual"
+        headingId="h-dm"
+        intro="Metro o Tottus, el sábado de la Semana 1. Cubre las 4 semanas."
+        stores={[
+          { title: 'Metro o Tottus', tag: 'Sábado S1', icon: 'cart', sections: p.monthly.slice(0, 3) },
+          { title: 'Metro o Tottus', tag: 'Sábado S1', icon: 'cart', sections: p.monthly.slice(3) },
+        ]}
+      />
+    </div>
+
+    <section class="section panel" aria-labelledby="h-freq">
+      <h2 id="h-freq" style="margin-bottom:14px">Cada cuánto se compra</h2>
+      <ul class="freq">
+        {p.frequency.map((f) => <li><b>{f.when}</b><span>{f.what}</span></li>)}
+      </ul>
+    </section>
+
+    <section class="section" id="mezclas" aria-labelledby="h-mez">
+      <div class="section-head">
+        <h2 id="h-mez">Mezclas de especias</h2>
+      </div>
+      <p class="lede" style="margin-bottom:18px">{p.blendsNote}</p>
+      <div class="blends">
+        {p.blends.map((b, i) => (
+          <article class="blend sticker" style={toneStyle(blendTone[i])}>
+            <div class="blend-h"><Illus name={blendIllus[i]} size={40} /><h3>{b.name}</h3></div>
+            <div class="blend-b">
+              <p><b>Frasco de unos 150 ml:</b> {b.recipe}</p>
+              <p><b>Para:</b> {b.use}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p class="small muted" style="margin-top:14px">{p.fiveSpiceSub}</p>
+    </section>
+
+    <section class="section" id="toppings" aria-labelledby="h-top" style={toneStyle(CAT_TONE.dulces)}>
+      <div class="section-head">
+        <h2 id="h-top">Toppings para overnight oats</h2>
+        <Illus name="jar" size={56} />
+      </div>
+      <ul class="compact cols">
+        {p.toppings.map((t) => (
+          <li>
+            <span class="name">{t.name}</span>
+            <div class="row"><span class="chip pa">Al mes: {t.qty === '—' ? 'según uso' : t.qty}</span></div>
+            <p class="small" style="margin:6px 0 0">{t.use}</p>
+          </li>
+        ))}
+      </ul>
+      <ul class="compact" style="margin-top:10px">
+        {p.toppingsExtra.map((x) => <li class="small">{x}</li>)}
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="h-cortes">
+      <div class="section-head"><h2 id="h-cortes">Cortes de carne</h2><Illus name="steak" size={56} /></div>
+      <ul class="compact cols">
+        {p.cuts.map((c) => (
+          <li><span class="name">{c.cut}</span><p class="small" style="margin:4px 0 0"><b>Para:</b> {c.for}</p><p class="small" style="margin:2px 0 0"><b>Cómo pedirlo:</b> {c.how}</p></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section" id="duracion" aria-labelledby="h-dur">
+      <div class="section-head"><h2 id="h-dur">Cuánto dura cada cosa</h2><Illus name="taper" size={56} /></div>
+      <ul class="compact cols">
+        {p.storage.map((s) => (
+          <li>
+            <span class="name">{s.item}</span>
+            <div class="row">
+              {s.fridge !== '—' && <span class="chip fr">Refrigerador: {s.fridge}</span>}
+              {s.freezer !== '—' && <span class="chip fz">Congelador: {s.freezer === 'No' ? 'no' : s.freezer}</span>}
+              {s.pantry !== '—' && <span class="chip pa">{s.pantry}</span>}
+            </div>
+          </li>
+        ))}
+      </ul>
+      <div class="two">
+        <div class="panel">
+          <h3>Temperatura al centro</h3>
+          <ul class="freq">{p.temps.map((t) => <li><b>{t.what}</b><span>{t.temp}</span></li>)}</ul>
+        </div>
+        <div class="panel">
+          <h3>Reglas de frío</h3>
+          <ul class="ing">{p.storageTips.map((t) => <li>{t}</li>)}</ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,56 @@
+---
+import Icon from './Icon.astro';
+
+interface Item { id: string; text: string }
+interface Section { name?: string; items: Item[] }
+interface Store { title: string; tag?: string; note?: string; icon?: string; sections: Section[] }
+interface Props {
+  listKey: string;
+  title: string;
+  stores: Store[];
+  intro?: string;
+  headingId?: string;
+}
+const { listKey, title, stores, intro, headingId } = Astro.props;
+const total = stores.reduce((n, s) => n + s.sections.reduce((m, x) => m + x.items.length, 0), 0);
+---
+<section class="checklist sticker" data-checklist={listKey} aria-labelledby={headingId}>
+  <div class="cl-head">
+    <h2 id={headingId}>{title}</h2>
+    <div class="progress" aria-live="polite">
+      <span class="bar" data-bar aria-hidden="true"><i></i></span>
+      <span data-progress>0 de {total}</span>
+    </div>
+  </div>
+  {intro && <p class="muted">{intro}</p>}
+  <div class="stores">
+    {stores.map((st, si) => (
+      <div class="store">
+        <div class="store-h">
+          {st.icon && <Icon name={st.icon} size={24} />}
+          <h3>{st.title}</h3>
+          {st.tag && <span class={`tag ${si % 2 ? 'alt' : ''}`}>{st.tag}</span>}
+        </div>
+        {st.note && <p class="note">{st.note}</p>}
+        {st.sections.map((sec) => (
+          <>
+            {sec.name && <p class="sec-name">{sec.name}</p>}
+            <ul class="checks">
+              {sec.items.map((it) => (
+                <li>
+                  <label>
+                    <input type="checkbox" data-id={it.id} />
+                    <span>{it.text}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </>
+        ))}
+      </div>
+    ))}
+  </div>
+  <div class="cl-foot">
+    <button type="button" class="btn" data-reset><Icon name="reset" size={20} />Reiniciar lista</button>
+  </div>
+</section>
