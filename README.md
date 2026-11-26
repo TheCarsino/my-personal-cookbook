@@ -40,13 +40,13 @@ src/
   data/plan.json        datos del plan (semanas, recetas, despensa)
   lib/plan.ts           tipos, colores por semana y categoría, utilidades
   layouts/Base.astro    cabecera, navegación, pie y script de listas
-  components/           Illus (ilustraciones SVG), Icon, Checklist, WeekBoard, PrintButton
+  components/           Illus (ilustraciones SVG), Icon, Checklist, WeekShop, WeekBoard, PrintButton
   pages/
     index.astro         resumen de las 4 semanas
     semana/[n].astro    /semana/1 a /semana/4
-    recetas/index.astro grilla con filtro por categoría
+    recetas/index.astro grilla con filtro por categoría y Básicos de cocina
     recetas/[slug].astro una página por receta
-    despensa.astro      imprescindibles, compra mensual, mezclas, toppings, duración
+    despensa.astro      5 listas: Compras del mes y Semanas 1 a 4, con costo aproximado
   styles/global.css
 ```
 
@@ -62,7 +62,7 @@ python3 /home/claude/build/export_json.py
 
 ## Listas de compras
 
-Las casillas se guardan en el `localStorage` del navegador con el prefijo `recetario-v3:` (una clave por lista). Cada lista tiene su botón **Reiniciar lista**. Si el navegador bloquea el almacenamiento, las casillas siguen funcionando pero no se recuerdan.
+Las casillas se guardan en el `localStorage` del navegador con el prefijo `recetario-v4:` (una clave por lista: `mes`, `semana-1` a `semana-4`). La lista de cada semana es la misma en `/semana/n` y en la Despensa, así que las marcas se comparten. Los productos y sus costos estimados salen de `MONTH_SHOP` y `WEEK_SHOP` en `data.py`. Cada lista tiene su botón **Reiniciar lista**. Si el navegador bloquea el almacenamiento, las casillas siguen funcionando pero no se recuerdan.
 
 ## Imprimir
 

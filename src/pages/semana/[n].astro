@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Checklist from '../../components/Checklist.astro';
+import WeekShop from '../../components/WeekShop.astro';
 import PrintButton from '../../components/PrintButton.astro';
 import Icon from '../../components/Icon.astro';
 import Illus from '../../components/Illus.astro';
@@ -14,13 +14,6 @@ const { week } = Astro.props;
 const tone = WEEK_TONE[week.n];
 const r = (slug: string) => base(`/recetas/${slug}/`);
 
-const stores = week.shop.map((s) => ({
-  title: s.store,
-  tag: s.day,
-  note: s.note ? s.note.charAt(0).toUpperCase() + s.note.slice(1) : undefined,
-  icon: s.day === 'Miércoles' ? 'basket' : 'cart',
-  sections: s.sections,
-}));
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 ---
 <Base title={`Semana ${week.n}`} active="semanas" description={`Semana ${week.n}: ${week.title}. Menú día por día, domingo de cocina y lista de compras.`}>
@@ -113,15 +106,10 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
         </ol>
       </section>
 
-      <div class="section">
-        <Checklist
-          listKey={`semana-${week.n}`}
-          title="Lista de compras"
-          headingId="h-lista"
-          stores={stores}
-          intro={week.n === 1 ? 'El sábado de esta semana también toca la compra mensual de despensa.' : undefined}
-        />
-        {week.n === 1 && <p class="small" style="margin-top:12px"><a href={base('/despensa/#compra-mensual')}>Abrir la compra mensual</a></p>}
+      <div class="section" id="lista">
+        <WeekShop week={week} headingId="h-lista">
+          <p class="small cl-link"><a href={base('/despensa/#mes')}>Compras del mes</a></p>
+        </WeekShop>
       </div>
     </div>
   </div>

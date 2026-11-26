@@ -1,12 +1,15 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Illus from '../../components/Illus.astro';
-import { plan, CAT_TONE, toneStyle, base } from '../../lib/plan';
+import { plan, CAT_TONE, WEEK_TONE, toneStyle, base } from '../../lib/plan';
 
 const order = plan.categories.map((c) => c.id);
 const recipes = [...plan.recipes].sort(
   (a, b) => order.indexOf(a.category) - order.indexOf(b.category) || (a.week ?? 9) - (b.week ?? 9)
 );
+const p = plan.pantry;
+const blendTone = [WEEK_TONE[1], WEEK_TONE[3], WEEK_TONE[2], CAT_TONE.dulces];
+const blendIllus = ['chili', 'leaf', 'spicejar', 'cookie'];
 const counts = Object.fromEntries(order.map((id) => [id, recipes.filter((r) => r.category === id).length]));
 ---
 <Base title="Recetas" active="recetas" description="Todas las recetas del plan: almuerzos, cenas, desayunos, dulces y alternativas de goodfoodpapi.">
@@ -41,6 +44,85 @@ const counts = Object.fromEntries(order.map((id) => [id, recipes.filter((r) => r
         </li>
       ))}
     </ul>
+  </section>
+
+
+  <section class="wrap basics" id="basicos" aria-labelledby="h-basicos">
+    <h2 id="h-basicos">Básicos de cocina</h2>
+
+    <details>
+      <summary>Mezclas de especias</summary>
+      <div class="db">
+        <p class="small" style="margin:0">{p.blendsNote}</p>
+        <div class="blends">
+          {p.blends.map((b, i) => (
+            <article class="blend sticker" style={toneStyle(blendTone[i])}>
+              <div class="blend-h"><Illus name={blendIllus[i]} size={40} /><h3>{b.name}</h3></div>
+              <div class="blend-b">
+                <p><b>Frasco de unos 150 ml:</b> {b.recipe}</p>
+                <p><b>Para:</b> {b.use}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p class="small muted" style="margin:0">{p.fiveSpiceSub}</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Toppings para overnight oats</summary>
+      <div class="db">
+        <ul class="compact cols">
+          {p.toppings.map((t) => (
+            <li>
+              <span class="name">{t.name}</span>
+              <div class="row"><span class="chip pa">Al mes: {t.qty === '—' ? 'según uso' : t.qty}</span></div>
+              <p class="small" style="margin:6px 0 0">{t.use}</p>
+            </li>
+          ))}
+        </ul>
+        <ul class="compact">
+          {p.toppingsExtra.map((x) => <li class="small">{x}</li>)}
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cortes de carne</summary>
+      <div class="db">
+        <ul class="compact cols">
+          {p.cuts.map((c) => (
+            <li><span class="name">{c.cut}</span><p class="small" style="margin:4px 0 0"><b>Para:</b> {c.for}</p><p class="small" style="margin:2px 0 0"><b>Cómo pedirlo:</b> {c.how}</p></li>
+          ))}
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cuánto dura cada cosa</summary>
+      <div class="db">
+        <ul class="compact cols">
+          {p.storage.map((s) => (
+            <li>
+              <span class="name">{s.item}</span>
+              <div class="row">
+                {s.fridge !== '—' && <span class="chip fr">Refrigerador: {s.fridge}</span>}
+                {s.freezer !== '—' && <span class="chip fz">Congelador: {s.freezer === 'No' ? 'no' : s.freezer}</span>}
+                {s.pantry !== '—' && <span class="chip pa">{s.pantry}</span>}
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <h4>Temperatura al centro</h4>
+          <ul class="freq">{p.temps.map((t) => <li><b>{t.what}</b><span>{t.temp}</span></li>)}</ul>
+        </div>
+        <div>
+          <h4>Reglas de frío</h4>
+          <ul class="ing">{p.storageTips.map((t) => <li>{t}</li>)}</ul>
+        </div>
+      </div>
+    </details>
   </section>
 
   <script is:inline>
