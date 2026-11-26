@@ -1,0 +1,25 @@
+---
+/** Lista de compras de una semana: misma fuente y misma clave en /semana/[n] y en /despensa. */
+import Checklist from './Checklist.astro';
+import type { Week } from '../lib/plan';
+
+interface Props { week: Week; title?: string; headingId?: string }
+const { week, title = 'Lista de compras', headingId } = Astro.props;
+
+const stores = week.shop.map((s) => ({
+  title: s.store,
+  tag: s.day,
+  icon: s.store === 'El mercado' ? 'basket' : 'cart',
+  cost: s.cost.label,
+  sections: s.sections,
+}));
+const c = week.shopCost;
+const costs = [
+  { label: 'Compra del sábado', value: `aprox. ${c.sabado.label}`, strong: true },
+  { label: 'Reposición del miércoles', value: `aprox. ${c.miercoles.label}` },
+  { label: 'Total de la semana', value: `aprox. ${c.total.label}`, strong: true },
+];
+---
+<Checklist listKey={`semana-${week.n}`} title={title} headingId={headingId} stores={stores} costs={costs}>
+  <slot />
+</Checklist>

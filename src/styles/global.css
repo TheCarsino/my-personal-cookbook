@@ -435,11 +435,42 @@ h4 { font-size: 1.1rem; font-weight: 700; }
 .toc { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-top: 18px; }
 .toc a { text-decoration: none; }
 
+
+/* ---------- Compras (despensa y semanas) ---------- */
+.costs { display: grid; gap: 6px; margin: 10px 0 4px; }
+.costs > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; border-bottom: 1.5px dashed #CBBFAE; padding: 4px 0; }
+.costs dt { font-weight: 700; }
+.costs dd { margin: 0; font-weight: 750; font-variant-numeric: tabular-nums; }
+.costs .strong { border-bottom: 0; }
+.costs .strong dt, .costs .strong dd { font-weight: 850; }
+.costs .strong dd { background: var(--tone, var(--mostaza)); color: var(--on-tone, var(--ink)); border: 2px solid var(--ink); border-radius: 999px; padding: 0 10px; }
+.store-cost { margin-left: auto; font-weight: 750; font-size: .92rem; white-space: nowrap; }
+.cl-link { margin: 8px 0 0; }
+.cl-link a { font-weight: 750; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.shopnav { position: sticky; top: 0; z-index: 20; background: var(--crema); border-bottom: var(--edge); padding: 10px 0; margin-top: 18px; }
+.shopnav ul { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.shopnav a {
+  display: grid; text-align: center; text-decoration: none; line-height: 1.05; padding: 6px 2px;
+  border: var(--edge); border-radius: 14px; background: var(--tone, var(--papel)); color: var(--on-tone, var(--ink)); box-shadow: 2px 2px 0 var(--ink);
+}
+.shopnav small { font-size: .72rem; font-weight: 650; }
+.shopnav b { font-family: var(--display); font-weight: 800; font-stretch: 85%; font-size: 1.05rem; }
+.shop-sec { scroll-margin-top: 84px; }
+.shop-sec .cl-head h2 { font-size: clamp(2rem, 8vw, 3rem); }
+.shop-sub { font-weight: 650; margin: 2px 0 0; }
+@media (min-width: 760px) { .shopnav ul { display: flex; flex-wrap: wrap; gap: 8px; } .shopnav a { display: inline-flex; gap: 6px; align-items: baseline; padding: 6px 14px; border-radius: 999px; } .shopnav small { font-size: .9rem; } }
+.basics { margin-top: 48px; }
+.basics details { border: var(--edge); border-radius: 16px; background: var(--papel); margin-top: 12px; }
+.basics summary { cursor: pointer; padding: 12px 14px; font-family: var(--display); font-weight: 800; font-stretch: 85%; font-size: 1.3rem; list-style-position: inside; }
+.basics details[open] summary { border-bottom: 2px dashed #CBBFAE; }
+.basics .db { padding: 14px; display: grid; gap: 14px; }
+.basics h4 { margin-bottom: 6px; }
+
 /* ---------- Impresion ---------- */
 @media print {
   @page { margin: 14mm; }
   body { background: #fff; padding: 0; font-size: 10.5pt; }
-  .topbar, .bottomnav, .foot, .skip, .btn, .filters, .weekswitch, [data-print], [data-reset], .noprint { display: none !important; }
+  .shopnav, .topbar, .bottomnav, .foot, .skip, .btn, .filters, .weekswitch, [data-print], [data-reset], .noprint { display: none !important; }
   .week-block, .page-hero, .rhero { background: #fff !important; color: #000 !important; border: 0; padding: 0 0 10px; }
   .sticker, .panel, .store, .btn { box-shadow: none !important; }
   .sticker, .panel, .day, .plate, .tl-item, .store, .checks li, .steps li, .ing li { break-inside: avoid; }

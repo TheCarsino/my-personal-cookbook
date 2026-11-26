@@ -3,15 +3,17 @@ import Icon from './Icon.astro';
 
 interface Item { id: string; text: string }
 interface Section { name?: string; items: Item[] }
-interface Store { title: string; tag?: string; note?: string; icon?: string; sections: Section[] }
+interface Store { title: string; tag?: string; note?: string; icon?: string; cost?: string; sections: Section[] }
+interface Cost { label: string; value: string; strong?: boolean }
 interface Props {
   listKey: string;
   title: string;
   stores: Store[];
   intro?: string;
   headingId?: string;
+  costs?: Cost[];
 }
-const { listKey, title, stores, intro, headingId } = Astro.props;
+const { listKey, title, stores, intro, headingId, costs } = Astro.props;
 const total = stores.reduce((n, s) => n + s.sections.reduce((m, x) => m + x.items.length, 0), 0);
 ---
 <section class="checklist sticker" data-checklist={listKey} aria-labelledby={headingId}>
@@ -22,7 +24,15 @@ const total = stores.reduce((n, s) => n + s.sections.reduce((m, x) => m + x.item
       <span data-progress>0 de {total}</span>
     </div>
   </div>
+  {costs && costs.length > 0 && (
+    <dl class="costs">
+      {costs.map((c) => (
+        <div class={c.strong ? 'strong' : undefined}><dt>{c.label}</dt><dd>{c.value}</dd></div>
+      ))}
+    </dl>
+  )}
   {intro && <p class="muted">{intro}</p>}
+  <slot />
   <div class="stores">
     {stores.map((st, si) => (
       <div class="store">
@@ -30,6 +40,7 @@ const total = stores.reduce((n, s) => n + s.sections.reduce((m, x) => m + x.item
           {st.icon && <Icon name={st.icon} size={24} />}
           <h3>{st.title}</h3>
           {st.tag && <span class={`tag ${si % 2 ? 'alt' : ''}`}>{st.tag}</span>}
+          {st.cost && <span class="store-cost">aprox. {st.cost}</span>}
         </div>
         {st.note && <p class="note">{st.note}</p>}
         {st.sections.map((sec) => (
